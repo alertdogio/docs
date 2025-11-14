@@ -1,0 +1,71 @@
+---
+title: "Webhook"
+description: "通过自定义 Webhook 接收 AlertDog 监控报警消息，开发者友好的通知方式"
+---
+
+简介：Webhook 是开发者友好的通知方式，支持将监控消息推送到您自定义的 HTTP 端点，实现与您的应用程序或工作流的深度集成。
+
+
+
+# 操作步骤
+
+<Steps>
+<Step title="配置 Webhook">
+  获取webhook
+</Step>
+
+<Step title="添加Webhook">
+  点击"添加通知渠道"，选择 Webhook 选项，输入webook链接
+<Frame >
+  <img
+    src="/images/notification-channels/webhook/webhook-url-config.png"
+    alt="AlertDog 中配置 Webhook URL"
+  />
+</Frame>
+</Step>
+
+
+
+<Step title="完成添加">
+  点击"确认"完成 Webhook 通知渠道配置
+</Step>
+</Steps>
+
+## Webhook 消息格式
+
+AlertDog 会以 POST 方法向您的 Webhook URL 发送 JSON 格式的数据：
+
+```json
+{
+  "event": "monitor_triggered",
+  "timestamp": "2025-01-15T10:30:00Z",
+  "monitor": {
+    "id": "monitor_123",
+    "name": "BTC 地址监控",
+    "type": "wallet"
+  },
+  "data": {
+    // 监控相关数据
+  }
+}
+```
+
+## 安全配置
+
+<Warning>
+  建议启用签名验证，确保接收到的请求来自 AlertDog。您可以在URI配置时设置唯一字符。
+</Warning>
+
+使用说明：配置完成后，监控触发时 AlertDog 会向您的 Webhook URL 发送请求。您可以在自己的应用中处理这些请求，实现自定义的通知逻辑。
+
+# 常见问题
+
+<AccordionGroup>
+<Accordion title="Webhook URL 必须是 HTTPS 吗？">
+  为了安全起见，我们强制使用 HTTPS。
+</Accordion>
+
+<Accordion title="Webhook 请求超时时间是多久？">
+  Webhook 请求超时时间为 5 秒。如果您的服务器响应时间过长，可能导致请求失败。
+</Accordion>
+</AccordionGroup>

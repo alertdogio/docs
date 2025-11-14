@@ -1,0 +1,124 @@
+---
+title: "Discord 频道"
+description: "通过 Discord 频道接收 AlertDog 监控报警消息，团队协作首选通知方式"
+---
+
+简介：Discord 是团队协作的理想通知渠道，支持将监控消息推送到指定的 Discord 频道，方便团队成员共享监控信息。
+
+## 操作步骤
+
+<Steps>
+
+<Step title="创建服务器">
+打开 Discord，添加服务器。
+
+<Frame caption="添加服务器">
+  <img
+    src="/images/notification-channels/discord/discord-add-server.png"
+    alt="Discord 添加服务器按钮"
+  />
+</Frame>
+
+按照提示添加。
+
+<Frame caption="选择服务器类型">
+  <img
+    src="/images/notification-channels/discord/discord-server-type.png"
+    alt="Discord 创建服务器，选择服务器类型"
+  />
+</Frame>
+
+<Frame caption="设置服务器名称">
+  <img
+    src="/images/notification-channels/discord/discord-server-name.png"
+    alt="Discord 服务器名称和图标设置"
+  />
+</Frame>
+
+<Frame caption="服务器创建完成">
+  <img
+    src="/images/notification-channels/discord/discord-server-created.png"
+    alt="Discord 服务器创建成功"
+  />
+</Frame>
+
+</Step>
+
+<Step title="复制 Webhook URL">
+服务器创建完成后，在设置里找到 Webhook。
+
+<Frame caption="打开设置">
+  <img
+    src="/images/notification-channels/discord/discord-settings-menu.png"
+    alt="Discord 服务器设置入口"
+  />
+</Frame>
+
+创建 Webhook。
+
+<Frame caption="Webhook 设置">
+  <img
+    src="/images/notification-channels/discord/discord-webhook-settings.png"
+    alt="Discord Webhook 设置页面"
+  />
+</Frame>
+
+<Frame caption="新建 Webhook">
+  <img
+    src="/images/notification-channels/discord/discord-create-webhook.png"
+    alt="创建新的 Discord Webhook"
+  />
+</Frame>
+
+复制 Webhook URL。
+
+<Frame caption="复制 Webhook URL">
+  <img
+    src="/images/notification-channels/discord/discord-copy-webhook-url.png"
+    alt="复制 Discord Webhook URL"
+  />
+</Frame>
+</Step>
+
+<Step title="创建通知渠道">
+打开 AlertDog，选择 Discord，输入 Webhook URL 并点击连接。
+
+<Frame caption="创建通知渠道">
+  <img
+    src="/images/notification-channels/discord/discord-alertdog-config.png"
+    alt="AlertDog 添加 Discord 通知渠道，输入 Webhook URL"
+  />
+</Frame>
+</Step>
+
+<Step title="创建完成">
+连接成功后，该通知渠道已添加成功，通知渠道列表中会显示该条通知渠道。
+
+<Frame caption="创建完成">
+  <img
+    src="/images/notification-channels/discord/discord-channel-created.png"
+    alt="Discord 通知渠道创建成功，显示在列表中"
+  />
+</Frame>
+
+</Step>
+
+</Steps>
+
+使用说明：配置完成后，您可以在创建监控任务时选择 Discord 作为通知方式。监控触发时，消息将推送到指定的 Discord 频道。
+
+## 常见问题
+
+<AccordionGroup>
+<Accordion title="如何删除 Discord 通知渠道？">
+  在通知渠道列表中找到 Discord 项，点击"删除"即可。
+</Accordion>
+
+<Accordion title="可以添加多个 Discord 频道吗？">
+  可以。您可以为不同的 Discord 频道配置多个 Webhook，实现分类通知。
+</Accordion>
+
+<Accordion title="Webhook URL 在哪里获取？">
+  在 Discord 服务器的频道设置 → 整合 → Webhook 中创建并复制 URL。
+</Accordion>
+</AccordionGroup>

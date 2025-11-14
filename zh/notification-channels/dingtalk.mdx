@@ -1,0 +1,95 @@
+---
+title: "DingTalk 钉钉"
+description: "通过钉钉机器人接收 AlertDog 监控报警消息，企业办公平台通知方式"
+---
+
+简介：钉钉是企业级办公平台，支持通过群组机器人推送监控消息，适合企业团队使用，可以在钉钉群组中实时查看监控报警。
+
+
+
+## 操作步骤
+
+<Steps>
+<Step title="创建机器人">
+  打开钉钉，在群组内找到设置，创建机器人
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-robot-settings.png"
+    alt="钉钉群组设置界面，显示智能群助手选项"
+  />
+</Frame>
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-add-robot.png"
+    alt="钉钉添加机器人界面，选择自定义机器人"
+  />
+</Frame>
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-select-webhook.png"
+    alt="钉钉选择 Webhook 类型机器人"
+  />
+</Frame>
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-create-group.png"
+    alt="钉钉创建自定义机器人配置界面"
+  />
+</Frame>
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-group-created.png"
+    alt="钉钉机器人创建成功界面"
+  />
+</Frame>
+</Step>
+
+<Step title="复制密钥和 Webhook URL">
+  创建完成后，复制密钥和 Webhook URL
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/Group 1947.png"
+    alt="钉钉机器人配置完成，显示 Webhook 地址和加签密钥"
+  />
+</Frame>
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-copy-webhook.png"
+    alt="钉钉复制 Webhook URL 和密钥"
+  />
+</Frame>
+
+</Step>
+<Step title="创建通知渠道">
+  打开 AlertDog，选择钉钉，输入密钥和 Webhook URL，确认即可
+   <Frame caption="创建通知渠道">
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-alertdog-config.png"
+    alt="创建通知渠道"
+  />
+</Frame>
+</Step>
+</Steps>
+
+
+<Note>
+  您需要在钉钉群组中添加自定义机器人，然后将机器人的 Webhook URL 复制到 AlertDog 中。
+</Note>
+
+使用说明：配置完成后，您可以在创建监控任务时选择钉钉作为通知方式。监控触发时，消息将推送到指定的钉钉群组。
+
+## 常见问题
+
+<AccordionGroup>
+<Accordion title="如何在钉钉中添加机器人？">
+  在钉钉群组设置 → 智能群助手 → 添加机器人 → 自定义机器人中创建并获取 Webhook URL。
+</Accordion>
+
+<Accordion title="什么是签名验证？">
+  钉钉机器人支持签名验证功能，增强安全性。如果启用了签名验证，需要在 AlertDog 中配置签名密钥。
+</Accordion>
+
+<Accordion title="钉钉机器人有消息频率限制吗？">
+  钉钉机器人有一定的频率限制，每分钟最多发送 20 条消息。
+</Accordion>
+</AccordionGroup>

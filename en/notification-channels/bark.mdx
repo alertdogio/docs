@@ -1,0 +1,66 @@
+---
+title: "Bark"
+description: "Push messages to iOS devices via Bark, supports offline notifications, exclusive push method for Apple users"
+---
+
+Introduction: Bark is a push tool designed specifically for iOS users, allowing AlertDog monitoring messages to be pushed to your iPhone or iPad, supporting offline notifications and custom ringtones.
+
+
+<Note>
+  Before using Bark notifications, you need to install the Bark App on your iOS device
+</Note>
+
+# Operation Steps
+
+<Steps>
+<Step title="Open Bark to Get URL">
+  Open Bark to get the URL
+    <Frame caption="Copy URL">
+  <img
+    src="/images/notification-channels/bark/bark-notification-test.png"
+    alt="Copy URL"
+  />
+</Frame>
+</Step>
+
+<Step title="Create Notification Channel">
+  Open AlertDog, select Bark, enter the URL and click connect
+   <Frame caption="Create Notification Channel">
+  <img
+    src="/images/notification-channels/bark/bark-key-config.png"
+    alt="Create notification channel"
+  />
+</Frame>
+</Step>
+
+<Step title="Creation Complete">
+After successful connection, the notification channel has been successfully added and will appear in the notification channel list
+
+
+</Step>
+</Steps>
+
+## Get Bark Push Key
+
+1. Open the Bark App on your iOS device
+2. Copy the displayed push Key
+3. Enter the Key into AlertDog configuration
+
+Usage Instructions: After configuration, monitoring trigger messages will be pushed to your iOS device via APNs, receiving notifications even in screen-off or offline states.
+
+# FAQ
+
+<AccordionGroup>
+<Accordion title="Does Bark support Android devices?">
+  No. Bark is a push tool designed specifically for iOS. Android users can choose other notification methods.
+</Accordion>
+
+<Accordion title="Can I customize the push ringtone?">
+  Yes. You can set custom ringtones and notification styles in the Bark App.
+</Accordion>
+
+<Accordion title="Does using Bark require payment?">
+  The Bark App is free to use, but if you use a self-hosted server, you need to deploy it yourself.
+</Accordion>
+</AccordionGroup>
+

@@ -1,122 +1,287 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "palm",
+  "name": "AlertDog Docs",
+  "description": "监控狗(AlertDog)是新一代 Web3 链上监控报警系统：实时追踪、智能提醒、多链支持，为加密投资者和开发者而生",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#ea9148",
+    "light": "#ea9148",
+    "dark": "#ea9148"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "zh",
+        "default": true,
+        "tabs": [
           {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
+            "tab": "使用教程",
+            "groups": [
+              {
+                "group": "开始使用",
+                "icon": "rocket",
+                "pages": ["zh/introduction", "zh/quickstart", "zh/sign-in"]
+              },
+              {
+                "group": "链上监控",
+                "icon": "bolt",
+                "pages": [
+                  {
+                    "group": "EVM 链监控",
+                    "pages": [
+                      "zh/monitors/evm-chain/what-is-evm-chain",
+                      "zh/monitors/evm-chain/wallet-monitoring",
+                      "zh/monitors/evm-chain/token-monitoring",
+                      "zh/monitors/evm-chain/multi-wallet-monitoring"
+                    ]
+                  },
+                  {
+                    "group": "SOL 链监控",
+                    "pages": [
+                      "zh/monitors/solana-chain/wallet-monitoring",
+                      "zh/monitors/solana-chain/token-price-monitoring",
+                      "zh/monitors/solana-chain/multi-wallet-monitoring"
+                    ]
+                  },
+                  {
+                    "group": "BTC 链监控",
+                    "pages": [
+                      "zh/monitors/btc-chain/wallet-monitoring",
+                      "zh/monitors/btc-chain/inscription-monitoring",
+                      "zh/monitors/btc-chain/rune-monitoring",
+                      "zh/monitors/btc-chain/alkanes-monitoring"
+                    ]
+                  },
+                  {
+                    "group": "SUI 链监控",
+                    "pages": [
+                      "zh/monitors/sui-chain/wallet-monitoring",
+                      "zh/monitors/sui-chain/token-price-monitoring"
+                    ]
+                  },
+                  "zh/monitors/gas-alert",
+                  "zh/monitors/whale-alert",
+                  "zh/monitors/hyperliquid",
+                  "zh/monitors/twitter-alert"
+                ]
+              },
+              {
+                "group": "通知渠道",
+                "icon": "bell",
+                "pages": [
+                  "zh/notification-channels/introduction",
+                  {
+                    "group": "Telegram 电报",
+                    "collapsed": false,
+                    "pages": [
+                      "zh/notification-channels/telegram",
+                      "zh/notification-channels/telegram-group",
+                      "zh/notification-channels/telegram-bot"
+                    ]
+                  },
+                  "zh/notification-channels/discord",
+                  "zh/notification-channels/bark",
+                  "zh/notification-channels/feishu",
+                  "zh/notification-channels/workwechat",
+                  "zh/notification-channels/dingtalk",
+                  "zh/notification-channels/webhook",
+                  "zh/notification-channels/email",
+                  "zh/notification-channels/mobile-app"
+                ]
+              },
+              {
+                "group": "用户设置",
+                "icon": "gear",
+                "pages": ["zh/settings/user-settings"]
+              },
+              {
+                "group": "更新日志",
+                "icon": "history",
+                "pages": ["zh/changelog"]
+              }
             ]
           },
           {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+            "tab": "实战案例",
+            "groups": [
+              {
+                "group": "实战案例",
+                "pages": [
+                  "zh/cases/how-to-monitor-cz-wallet",
+                  "zh/cases/how-to-monitor-cz-twitter",
+                  "zh/cases/how-to-detect-coordinated-buying",
+                  "zh/cases/how-to-find-hot-inscriptions",
+                  "zh/cases/how-to-track-binance-alpha"
+                ]
+              }
             ]
           },
           {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+            "tab": "FAQ 常见问题",
+            "groups": [
+              {
+                "group": "监控使用",
+                "pages": [
+                  "zh/faq/why-no-notifications",
+                  "zh/faq/how-to-filter-spam-tokens"
+                ]
+              },
+              {
+                "group": "用户设置",
+                "pages": ["zh/faq/what-is-vip-membership"]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+            "tab": "Guide",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "icon": "rocket",
+                "pages": ["en/introduction", "en/quickstart", "en/sign-in"]
+              },
+              {
+                "group": "On-Chain Monitoring",
+                "icon": "bolt",
+                "pages": [
+                  {
+                    "group": "EVM Chain",
+                    "pages": [
+                      "en/monitors/evm-chain/what-is-evm-chain",
+                      "en/monitors/evm-chain/wallet-monitoring",
+                      "en/monitors/evm-chain/token-monitoring",
+                      "en/monitors/evm-chain/multi-wallet-monitoring"
+                    ]
+                  },
+                  {
+                    "group": "SOL Chain",
+                    "pages": [
+                      "en/monitors/solana-chain/wallet-monitoring",
+                      "en/monitors/solana-chain/token-price-monitoring",
+                      "en/monitors/solana-chain/multi-wallet-monitoring"
+                    ]
+                  },
+                  {
+                    "group": "BTC Chain",
+                    "pages": [
+                      "en/monitors/btc-chain/wallet-monitoring",
+                      "en/monitors/btc-chain/inscription-monitoring",
+                      "en/monitors/btc-chain/rune-monitoring",
+                      "en/monitors/btc-chain/alkanes-monitoring"
+                    ]
+                  },
+                  {
+                    "group": "SUI Chain",
+                    "pages": [
+                      "en/monitors/sui-chain/wallet-monitoring",
+                      "en/monitors/sui-chain/token-price-monitoring"
+                    ]
+                  },
+                  "en/monitors/gas-alert",
+                  "en/monitors/whale-alert",
+                  "en/monitors/hyperliquid",
+                  "en/monitors/twitter-alert"
+                ]
+              },
+              {
+                "group": "Notification Channels",
+                "icon": "bell",
+                "pages": [
+                  "en/notification-channels/introduction",
+                  {
+                    "group": "Telegram",
+                    "collapsed": false,
+                    "pages": [
+                      "en/notification-channels/telegram",
+                      "en/notification-channels/telegram-group",
+                      "en/notification-channels/telegram-bot"
+                    ]
+                  },
+                  "en/notification-channels/discord",
+                  "en/notification-channels/bark",
+                  "en/notification-channels/feishu",
+                  "en/notification-channels/workwechat",
+                  "en/notification-channels/dingtalk",
+                  "en/notification-channels/webhook",
+                  "en/notification-channels/email",
+                  "en/notification-channels/mobile-app"
+                ]
+              },
+              {
+                "group": "User Settings",
+                "icon": "gear",
+                "pages": ["en/settings/user-settings"]
+              },
+              {
+                "group": "Changelog",
+                "icon": "history",
+                "pages": ["en/changelog"]
+              }
             ]
           },
           {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+            "tab": "Practical Cases",
+            "groups": [
+              {
+                "group": "Practical Cases",
+                "pages": [
+                  "en/cases/how-to-monitor-cz-wallet",
+                  "en/cases/how-to-monitor-cz-twitter",
+                  "en/cases/how-to-detect-coordinated-buying",
+                  "en/cases/how-to-find-hot-inscriptions",
+                  "en/cases/how-to-track-binance-alpha"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "FAQ",
+            "groups": [
+              {
+                "group": "Monitoring Usage",
+                "pages": [
+                  "en/faq/why-no-notifications",
+                  "en/faq/how-to-filter-spam-tokens"
+                ]
+              },
+              {
+                "group": "User Settings",
+                "pages": ["en/faq/what-is-vip-membership"]
+              }
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
+
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "升级 Pro",
+        "href": "https://alertdog.io/price"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "控制台",
+      "href": "https://alertdog.io"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/alertdogio",
+      "github": "https://github.com/alertdogio"
     }
   }
 }

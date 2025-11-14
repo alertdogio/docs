@@ -1,0 +1,65 @@
+---
+title: "Bark 手机推送"
+description: "通过 Bark 推送消息到 iOS 设备，支持离线通知，Apple 用户专属推送方式"
+---
+
+简介：Bark 是一款专为 iOS 用户设计的推送工具，可以将 AlertDog 的监控消息推送到您的 iPhone 或 iPad，支持离线通知和自定义铃声。
+
+
+<Note>
+  使用 Bark 通知前，您需要 在 iOS 设备上安装 Bark App
+</Note>
+
+# 操作步骤
+
+<Steps>
+<Step title="打开bark获取url">
+  打开bark获取url
+    <Frame caption="复制url">
+  <img
+    src="/images/notification-channels/bark/bark-notification-test.png"
+    alt="复制url"
+  />
+</Frame>
+</Step>
+
+<Step title="创建通知渠道">
+  打开 AlertDog，选择bark， 输入url并点击连接
+   <Frame caption="创建通知渠道">
+  <img
+    src="/images/notification-channels/bark/bark-key-config.png"
+    alt="创建通知渠道"
+  />
+</Frame>
+</Step>
+
+<Step title="创建完成">
+连接成功后，该通知渠道已添加成功，通知渠道列表中会显示该条通知渠道
+
+
+</Step>
+</Steps>
+
+## 获取 Bark 推送 Key
+
+1. 在 iOS 设备上打开 Bark App
+2. 复制显示的推送 Key
+3. 将 Key 填入 AlertDog 配置中
+
+使用说明：配置完成后，监控触发时消息将通过 APNs 推送到您的 iOS 设备，即使在息屏或离线状态下也能收到通知。
+
+# 常见问题
+
+<AccordionGroup>
+<Accordion title="Bark 支持 Android 设备吗？">
+  不支持。Bark 是专为 iOS 设计的推送工具，Android 用户可以选择其他通知方式。
+</Accordion>
+
+<Accordion title="可以自定义推送铃声吗？">
+  可以。在 Bark App 中可以设置自定义铃声和通知样式。
+</Accordion>
+
+<Accordion title="使用 Bark 需要付费吗？">
+  Bark App 免费使用，但如果使用自建服务器则需要自行部署。
+</Accordion>
+</AccordionGroup>

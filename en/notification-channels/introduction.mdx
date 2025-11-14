@@ -1,0 +1,126 @@
+---
+title: "Overview"
+description: "Learn about the various notification channels supported by AlertDog and choose the message push method that suits you best"
+---
+
+## Overview
+
+AlertDog supports multiple notification channels, allowing you to receive monitoring alert messages in the most convenient way.
+
+## Supported Notification Channels
+
+AlertDog supports 9 notification channels to meet different scenarios and user needs.
+
+### Instant Messaging Platforms
+
+<CardGroup cols={2}>
+  <Card title="Telegram" icon="telegram" href="/en/notification-channels/telegram">
+    Supports personal/group/custom Bot notifications.
+    Instant push, globally available
+  </Card>
+
+  <Card title="Discord Channel" icon="discord" href="/en/notification-channels/discord">
+   
+    Supports channel notifications, share monitoring information with team members in real-time, suitable for communities and teams
+  </Card>
+</CardGroup>
+
+### Enterprise Office Platforms
+
+<CardGroup cols={3}>
+  <Card title="FeiShu" icon="feather" href="/en/notification-channels/feishu">
+    Enterprise collaboration platform, supports group robot push, suitable for team collaboration
+  </Card>
+
+  <Card title="DingTalk" icon="comment" href="/en/notification-channels/dingtalk">
+    Enterprise office platform, supports group robots, up to 20 messages per minute
+  </Card>
+
+  <Card title="WeChat Work" icon="wechat" href="/en/notification-channels/workwechat">
+    WeChat Work group push, suitable for teams using WeChat Work
+  </Card>
+</CardGroup>
+
+### Mobile Device Push
+
+<CardGroup cols={2}>
+  <Card title="Bark Mobile Push" icon="mobile" href="/en/notification-channels/bark">
+    
+    Push to Apple devices, supports offline notifications and custom ringtones
+  </Card>
+
+  <Card title="Mobile App" icon="mobile-screen" href="/en/notification-channels/mobile-app">
+    
+    Supports iOS and Android platforms, receive monitoring alert messages anytime, anywhere
+  </Card>
+</CardGroup>
+
+### Developer Tools
+
+<CardGroup cols={2}>
+  <Card title="Webhook" icon="webhook" href="/en/notification-channels/webhook">
+    
+    Supports custom HTTP endpoints, enables deep integration with your applications or workflows
+  </Card>
+
+  <Card title="Email" icon="envelope" href="/en/notification-channels/email">
+    
+    Receive monitoring alerts via email, suitable for non-urgent monitoring tasks
+  </Card>
+</CardGroup>
+
+## How to Add Notification Channels
+
+<Steps>
+  <Step title="Enter Console">
+    After logging into AlertDog, click "Console" in the top left corner to enter the management interface
+  </Step>
+
+  <Step title="Select Notification Channels">
+    Find the "Notification Channels" option in the left menu
+  </Step>
+
+  <Step title="Add Channel">
+    Click "Add Notification Channel" and select the notification method you need
+  </Step>
+
+  <Step title="Complete Configuration">
+    Complete the corresponding configuration or binding operation as prompted
+  </Step>
+</Steps>
+
+<Tip>
+  You can add multiple notification channels simultaneously and select which channels to use for notifications when creating monitoring. Different monitoring tasks can be configured with different notification channel combinations.
+</Tip>
+
+## FAQ
+
+<AccordionGroup>
+<Accordion title="Can I use multiple notification channels simultaneously?">
+  Yes. You can configure multiple notification channels for the same monitoring task. When monitoring triggers, notifications will be sent to all configured channels simultaneously.
+</Accordion>
+
+<Accordion title="Which notification channel is the fastest?">
+  Telegram and Webhook have the fastest push speeds, usually at the millisecond level. If you need the fastest notification response, it's recommended to use Telegram personal notification or Webhook.
+</Accordion>
+
+<Accordion title="Which notification channel should enterprise users choose?">
+  Enterprise users can choose based on team usage habits:
+  - FeiShu: Suitable for enterprises using ByteDance office suites
+  - DingTalk: Suitable for enterprise users in the Alibaba ecosystem
+  - WeChat Work: Suitable for enterprise users in the Tencent ecosystem
+  - Discord Channel: Suitable for overseas teams or technical communities
+</Accordion>
+
+<Accordion title="What are the message limits for notification channels?">
+  Different channels have different limits:
+  - Telegram Personal: Up to 30 messages per second
+  - Telegram Group: Up to 20 messages per minute
+  - DingTalk: Up to 20 messages per minute
+  - Webhook: No limit (depends on your server)
+  
+  For higher limits, upgrade to VIP and use custom Telegram Bot.
+</Accordion>
+</AccordionGroup>
+
+

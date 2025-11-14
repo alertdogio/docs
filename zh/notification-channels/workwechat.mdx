@@ -1,0 +1,93 @@
+---
+title: "WeChat 企业微信"
+description: "企业微信发送"
+---
+
+
+
+
+## 操作步骤
+
+<Steps>
+<Step title="企业微信打开消息推送">
+  打开企业微信，选择任一群聊，打开设置
+    <Frame>
+  <img
+    src="/images/notification-channels/wx/workwechat-robot-settings.png"
+    alt="企业微信群聊设置界面，显示群机器人选项"
+  />
+</Frame>
+选择消息推送
+  <Frame>
+  <img
+    src="/images/notification-channels/wx/workwechat-add-robot.png"
+    alt="企业微信消息推送界面，点击添加机器人"
+  />
+</Frame>
+点击添加
+  <Frame>
+  <img
+    src="/images/notification-channels/wx/workwechat-robot-name.png"
+    alt="企业微信自定义机器人名称界面"
+  />
+</Frame>
+自定义一个名称，点击保存
+  <Frame>
+  <img
+    src="/images/notification-channels/wx/workwechat-copy-webhook.png"
+    alt="企业微信复制 Webhook URL 界面"
+  />
+</Frame>
+复制 Webhook 地址，点击完成
+  <Frame>
+  <img
+    src="/images/notification-channels/wx/workwechat-alertdog-config.png"
+    alt="AlertDog 中配置企业微信通知渠道"
+  />
+</Frame>
+
+
+
+
+</Step>
+
+<Step title="创建通知渠道">
+  打开 AlertDog，选择企业微信，输入 Webhook 并点击连接
+  <Frame>
+  <img
+    src="/images/notification-channels/wx/workwechat-test-notification.png"
+    alt="企业微信测试通知成功界面"
+  />
+</Frame>
+</Step>
+
+<Step title="创建完成">
+连接成功后，该通知渠道已添加成功，通知渠道列表中会显示该条通知渠道
+
+
+</Step>
+</Steps>
+
+{/* ## 获取 Bark 推送 Key
+
+1. 在 iOS 设备上打开 Bark App
+2. 复制显示的推送 Key
+3. 将 Key 填入 AlertDog 配置中
+
+使用说明：配置完成后，监控触发时消息将通过 APNs 推送到您的 iOS 设备，即使在息屏或离线状态下也能收到通知。
+
+# 常见问题
+
+<AccordionGroup>
+<Accordion title="Bark 支持 Android 设备吗？">
+  不支持。Bark 是专为 iOS 设计的推送工具，Android 用户可以选择其他通知方式。
+</Accordion>
+
+<Accordion title="可以自定义推送铃声吗？">
+  可以。在 Bark App 中可以设置自定义铃声和通知样式。
+</Accordion>
+
+<Accordion title="使用 Bark 需要付费吗？">
+  Bark App 免费使用，但如果使用自建服务器则需要自行部署。
+</Accordion>
+</AccordionGroup> */}

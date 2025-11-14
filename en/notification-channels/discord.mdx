@@ -1,0 +1,125 @@
+---
+title: "Discord"
+description: "Receive AlertDog monitoring alert messages through Discord channels, preferred notification method for team collaboration"
+---
+
+Introduction: Discord is an ideal notification channel for team collaboration, supporting pushing monitoring messages to specified Discord channels, making it convenient for team members to share monitoring information.
+
+## Operation Steps
+
+<Steps>
+
+<Step title="Create Server">
+Open Discord, add a server.
+
+<Frame caption="Add Server">
+  <img
+    src="/images/notification-channels/discord/discord-add-server.png"
+    alt="Discord add server button"
+  />
+</Frame>
+
+Follow the prompts to add.
+
+<Frame caption="Select Server Type">
+  <img
+    src="/images/notification-channels/discord/discord-server-type.png"
+    alt="Discord create server, select server type"
+  />
+</Frame>
+
+<Frame caption="Set Server Name">
+  <img
+    src="/images/notification-channels/discord/discord-server-name.png"
+    alt="Discord server name and icon settings"
+  />
+</Frame>
+
+<Frame caption="Server Created">
+  <img
+    src="/images/notification-channels/discord/discord-server-created.png"
+    alt="Discord server created successfully"
+  />
+</Frame>
+
+</Step>
+
+<Step title="Copy Webhook URL">
+After the server is created, find Webhook in settings.
+
+<Frame caption="Open Settings">
+  <img
+    src="/images/notification-channels/discord/discord-settings-menu.png"
+    alt="Discord server settings entry"
+  />
+</Frame>
+
+Create a Webhook.
+
+<Frame caption="Webhook Settings">
+  <img
+    src="/images/notification-channels/discord/discord-webhook-settings.png"
+    alt="Discord Webhook settings page"
+  />
+</Frame>
+
+<Frame caption="Create New Webhook">
+  <img
+    src="/images/notification-channels/discord/discord-create-webhook.png"
+    alt="Create new Discord Webhook"
+  />
+</Frame>
+
+Copy the Webhook URL.
+
+<Frame caption="Copy Webhook URL">
+  <img
+    src="/images/notification-channels/discord/discord-copy-webhook-url.png"
+    alt="Copy Discord Webhook URL"
+  />
+</Frame>
+</Step>
+
+<Step title="Create Notification Channel">
+Open AlertDog, select Discord, enter the Webhook URL and click connect.
+
+<Frame caption="Create Notification Channel">
+  <img
+    src="/images/notification-channels/discord/discord-alertdog-config.png"
+    alt="AlertDog add Discord notification channel, enter Webhook URL"
+  />
+</Frame>
+</Step>
+
+<Step title="Creation Complete">
+After successful connection, the notification channel has been successfully added and will appear in the notification channel list.
+
+<Frame caption="Creation Complete">
+  <img
+    src="/images/notification-channels/discord/discord-channel-created.png"
+    alt="Discord notification channel created successfully, shown in list"
+  />
+</Frame>
+
+</Step>
+
+</Steps>
+
+Usage Instructions: After configuration, you can select Discord as the notification method when creating monitoring tasks. When monitoring triggers, messages will be pushed to the specified Discord channel.
+
+## FAQ
+
+<AccordionGroup>
+<Accordion title="How to delete a Discord notification channel?">
+  Find the Discord item in the notification channel list and click "Delete".
+</Accordion>
+
+<Accordion title="Can I add multiple Discord channels?">
+  Yes. You can configure multiple Webhooks for different Discord channels to implement categorized notifications.
+</Accordion>
+
+<Accordion title="Where to get the Webhook URL?">
+  In Discord server's channel settings → Integrations → Webhook to create and copy the URL.
+</Accordion>
+</AccordionGroup>
+

@@ -1,0 +1,72 @@
+---
+title: "Webhook"
+description: "Receive AlertDog monitoring alert messages through custom Webhook, a developer-friendly notification method"
+---
+
+Introduction: Webhook is a developer-friendly notification method that supports pushing monitoring messages to your custom HTTP endpoint, enabling deep integration with your applications or workflows.
+
+
+
+# Operation Steps
+
+<Steps>
+<Step title="Configure Webhook">
+  Get the webhook
+</Step>
+
+<Step title="Add Webhook">
+  Click "Add Notification Channel", select the Webhook option, enter the webhook link
+<Frame >
+  <img
+    src="/images/notification-channels/webhook/webhook-url-config.png"
+    alt="Configure Webhook URL in AlertDog"
+  />
+</Frame>
+</Step>
+
+
+
+<Step title="Complete Addition">
+  Click "Confirm" to complete Webhook notification channel configuration
+</Step>
+</Steps>
+
+## Webhook Message Format
+
+AlertDog will send JSON-formatted data to your Webhook URL via POST method:
+
+```json
+{
+  "event": "monitor_triggered",
+  "timestamp": "2025-01-15T10:30:00Z",
+  "monitor": {
+    "id": "monitor_123",
+    "name": "BTC Address Monitoring",
+    "type": "wallet"
+  },
+  "data": {
+    // Monitoring related data
+  }
+}
+```
+
+## Security Configuration
+
+<Warning>
+  It's recommended to enable signature verification to ensure requests are from AlertDog. You can set a unique character when configuring the URI.
+</Warning>
+
+Usage Instructions: After configuration, AlertDog will send requests to your Webhook URL when monitoring triggers. You can process these requests in your own application to implement custom notification logic.
+
+# FAQ
+
+<AccordionGroup>
+<Accordion title="Must Webhook URL be HTTPS?">
+  For security reasons, we enforce the use of HTTPS.
+</Accordion>
+
+<Accordion title="What is the Webhook request timeout?">
+  The Webhook request timeout is 5 seconds. If your server response time is too long, requests may fail.
+</Accordion>
+</AccordionGroup>
+

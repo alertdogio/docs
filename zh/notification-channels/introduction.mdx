@@ -1,0 +1,125 @@
+---
+title: "通知渠道简介"
+description: "了解 AlertDog 支持的各种通知渠道，选择最适合您的消息推送方式"
+---
+
+## 概述
+
+AlertDog 支持多种通知渠道，让您可以通过最便捷的方式接收监控报警消息。
+
+## 支持的通知渠道
+
+AlertDog 支持 9 种通知渠道，满足不同场景和用户需求。
+
+### 即时通讯平台
+
+<CardGroup cols={2}>
+  <Card title="Telegram 电报" icon="telegram" href="/zh/notification-channels/telegram">
+    支持通知到个人/群组/自定义 Bot等方式。
+    即时推送，全球可用
+  </Card>
+
+  <Card title="Discord 频道" icon="discord" href="/zh/notification-channels/discord">
+   
+    支持频道通知，与团队成员实时共享监控信息，适合社区和团队使用
+  </Card>
+</CardGroup>
+
+### 企业办公平台
+
+<CardGroup cols={3}>
+  <Card title="FeiShu 飞书" icon="feather" href="/zh/notification-channels/feishu">
+    企业协作平台，支持群组机器人推送，适合团队协同办公
+  </Card>
+
+  <Card title="DingTalk 钉钉" icon="comment" href="/zh/notification-channels/dingtalk">
+    企业办公平台，支持群组机器人，每分钟最多 20 条消息
+  </Card>
+
+  <Card title="WeChat 企业微信" icon="wechat" href="/zh/notification-channels/workwechat">
+    企业微信群组推送，适合使用企业微信的团队
+  </Card>
+</CardGroup>
+
+### 移动设备推送
+
+<CardGroup cols={2}>
+  <Card title="Bark 手机推送" icon="mobile" href="/zh/notification-channels/bark">
+    
+    推送到 Apple 设备，支持离线通知和自定义铃声
+  </Card>
+
+  <Card title="移动应用" icon="mobile-screen" href="/zh/notification-channels/mobile-app">
+    
+    支持 iOS 和 Android 平台，随时随地接收监控报警消息
+  </Card>
+</CardGroup>
+
+### 开发者工具
+
+<CardGroup cols={2}>
+  <Card title="Webhook" icon="webhook" href="/zh/notification-channels/webhook">
+    
+    支持自定义 HTTP 端点，实现与您的应用程序或工作流的深度集成
+  </Card>
+
+  <Card title="Email 邮件" icon="envelope" href="/zh/notification-channels/email">
+    
+    通过邮件接收监控报警，适合不紧急的监控任务
+  </Card>
+</CardGroup>
+
+## 如何添加通知渠道
+
+<Steps>
+  <Step title="进入控制台">
+    登录 AlertDog 后，点击左上角"控制台"进入管理界面
+  </Step>
+
+  <Step title="选择通知渠道">
+    在左侧菜单找到"通知渠道"选项
+  </Step>
+
+  <Step title="添加渠道">
+    点击"添加通知渠道"，选择您需要的通知方式
+  </Step>
+
+  <Step title="完成配置">
+    根据提示完成相应的配置或绑定操作
+  </Step>
+</Steps>
+
+<Tip>
+  您可以同时添加多个通知渠道，并在创建监控时选择使用哪些渠道接收通知。不同的监控任务可以配置不同的通知渠道组合。
+</Tip>
+
+## 常见问题
+
+<AccordionGroup>
+<Accordion title="可以同时使用多个通知渠道吗？">
+  可以。您可以为同一个监控任务配置多个通知渠道，当监控触发时，会同时向所有配置的渠道发送通知。
+</Accordion>
+
+<Accordion title="哪个通知渠道最快？">
+  Telegram 和 Webhook 的推送速度最快，通常在毫秒级别。如果您需要最快的通知响应，建议使用 Telegram 个人通知或 Webhook。
+</Accordion>
+
+<Accordion title="企业用户应该选择哪个通知渠道？">
+  企业用户可以根据团队使用习惯选择：
+  - FeiShu 飞书：适合使用字节跳动办公套件的企业
+  - DingTalk 钉钉：适合阿里生态的企业用户
+  - WeChat 企业微信：适合腾讯生态的企业用户
+  - Discord 频道：适合海外团队或技术社区
+</Accordion>
+
+<Accordion title="通知渠道的消息限制是什么？">
+  不同渠道有不同的限制：
+  - Telegram 个人：每秒最多 30 条
+  - Telegram 群组：每分钟最多 20 条
+  - 钉钉：每分钟最多 20 条
+  - Webhook：无限制（取决于您的服务器）
+  
+  如需更高限制，可升级 VIP 并使用自定义 Telegram Bot。
+</Accordion>
+</AccordionGroup>
+

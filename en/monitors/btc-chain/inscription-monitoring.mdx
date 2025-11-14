@@ -1,0 +1,70 @@
+---
+title: "BRC20 Monitoring"
+description: "Track trending BTC inscription minting activities in real-time, mint early with low miner fees, lead the market to gain first-mover advantage"
+---
+
+## Add Inscription Minting Monitoring
+
+Precisely capture trending inscription minting opportunities by setting conditions based on time and quantity dimensions.
+
+<Frame caption="Inscription Monitoring Configuration">
+  <img src="/images/monitors/btc-chain/inscription/inscription-monitor-form.png" alt="Inscription monitoring configuration interface" />
+</Frame>
+
+
+**Condition Setting Description**
+<Note>
+**Condition Setting: Configure through time and quantity dimensions**
+
+**Time Dimension Options:**
+
+- Within last 10 minutes mempool
+- Last 3 blocks
+- Last 10 blocks
+- Last 20 blocks
+
+**Quantity Dimension Options:**
+
+- Minting wallet count greater than
+- Transaction count greater than
+- Inscription minting progress greater than
+- Inscription minting progress less than
+
+You can customize combinations of time conditions + quantity conditions. Multiple conditions can be added, notifications will only be sent when inscriptions meet all conditions simultaneously.
+
+**Configuration Example:**
+<Frame caption="Notifications will only be sent when the inscription simultaneously meets: minting wallet count > 10 in last 10 minutes mempool, and minting progress > 50%.">
+  <img
+    src="/images/monitors/btc-chain/inscription/config-example.png"
+    alt="Notifications will only be sent when the inscription simultaneously meets: minting wallet count > 10 in last 10 minutes mempool, and minting progress > 50%."
+  />
+</Frame>
+
+
+
+</Note>
+
+### Notification Example
+
+<Frame caption="Inscription Monitoring Notification Message">
+  <img
+    src="/images/monitors/btc-chain/inscription/inscription-monitor-entry.png"
+    alt="Example notification message after inscription monitoring triggers"
+  />
+</Frame>
+
+## Manage Inscription Monitoring
+
+You can manage added inscription monitoring through the following methods:
+
+- **Batch Operations**: Click batch operations to perform batch move to group, batch edit, batch modify notification methods, batch delete on selected monitoring
+- **Monitoring History**: View received monitoring notification history on the unified monitoring history page
+- **Enable/Disable, Edit, Delete**: Perform enable/disable, edit, delete operations on monitoring
+
+<Frame caption="Inscription Monitoring Management Interface">
+  <img
+    src="/images/monitors/btc-chain/inscription/inscription-notification-example.png"
+    alt="Inscription monitoring list and management function interface"
+  />
+</Frame>
+

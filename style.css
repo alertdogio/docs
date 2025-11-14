@@ -1,0 +1,28 @@
+:root {
+  text-autospace: normal;
+}
+.bg-background-light {
+  background-color: rgb(255 253 249);
+}
+@media (min-width: 1024px) {
+  .lg\:px-12 {
+    padding-left: 30px;
+    padding-right: 3rem;
+  }
+}
+.space-y-2\.5 > :not([hidden]) ~ :not([hidden]) {
+  padding-top: 20px;
+}
+#navbar {
+  height: 62px;
+  box-shadow: 0 4px 8px #0000000d;
+}
+
+.nav-logo {
+  height: 40px;
+  width: 133px;
+}
+
+#footer > div:nth-of-type(2) {
+  display: none !important;
+}

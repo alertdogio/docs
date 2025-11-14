@@ -1,0 +1,259 @@
+---
+title: "What is EVM Chain"
+description: "Understand the concept of Ethereum Virtual Machine (EVM) compatible chains, how they work, introduction to major EVM chains, and how to monitor EVM chains with AlertDog"
+---
+
+<Info>
+  EVM chains refer to blockchain networks compatible with the Ethereum Virtual Machine (EVM) that can run Ethereum smart contracts and decentralized applications (DApps).
+</Info>
+
+## What is EVM (Ethereum Virtual Machine)
+
+The Ethereum Virtual Machine (EVM) is a core component of the Ethereum network, a decentralized computing environment used to execute smart contract code.
+
+### Core Features of EVM
+
+<AccordionGroup>
+  <Accordion title="Turing Complete" icon="gear">
+    EVM is Turing complete, meaning it can execute any algorithm or computational task as long as there is sufficient Gas fee support. This enables developers to create complex decentralized applications.
+  </Accordion>
+
+<Accordion title="Deterministic Execution" icon="check">
+  The same input in EVM always produces the same output, ensuring consistent smart contract execution results across all nodes, maintaining network consensus.
+</Accordion>
+
+<Accordion title="Isolated Environment" icon="shield">
+  Smart contracts run in EVM's sandboxed environment, isolated from the host system, ensuring security and preventing malicious code from affecting the network.
+</Accordion>
+
+  <Accordion title="Gas Mechanism" icon="gas-pump">
+    Limits computational resource usage through the Gas mechanism, preventing infinite loops and resource abuse, ensuring stable network operation.
+  </Accordion>
+</AccordionGroup>
+
+## Advantages of EVM Compatible Chains
+
+Choosing EVM compatible chains brings many benefits to developers and users:
+
+### Developer Friendly
+
+<CardGroup cols={2}>
+  <Card title="Seamless Migration" icon="code-merge">
+    Existing Ethereum smart contracts can be directly deployed on EVM compatible chains without code modifications, greatly reducing migration costs.
+  </Card>
+
+<Card title="Rich Tooling" icon="toolbox">
+  Can use mature programming languages like Solidity and Vyper, as well as development tools like Hardhat, Truffle, and Remix.
+</Card>
+
+<Card title="Large Community" icon="users">
+  Benefit from Ethereum's large developer community, access to abundant documentation, tutorials, and open-source project references.
+</Card>
+
+  <Card title="Unified Standards" icon="file-contract">
+    Follow standards like ERC-20, ERC-721, ERC-1155, ensuring interoperability of tokens and NFTs.
+  </Card>
+</CardGroup>
+
+### Enhanced User Experience
+
+- **Lower Transaction Fees**: Compared to Ethereum mainnet, EVM compatible chains typically offer lower Gas fees
+- **Faster Transaction Speed**: Shorter block times and higher throughput provide smoother user experience
+- **Familiar Wallets**: Can use familiar Ethereum wallets like MetaMask and Trust Wallet
+- **Cross-Chain Interoperability**: Can easily transfer assets between different EVM chains through cross-chain bridges
+
+## Introduction to Major EVM Compatible Chains
+
+Following are the main EVM compatible chains currently in the market:
+
+### Layer 1 Public Chains
+
+<Tabs>
+  <Tab title="BNB Chain">
+    **BNB Chain** (formerly Binance Smart Chain BSC) is a high-performance blockchain launched by Binance.
+
+    **Features:**
+    - 3 second block time
+    - Low transaction fees (typically < $0.1)
+    - Active DeFi ecosystem
+    - Deep integration with Binance exchange
+
+    **Use Cases:** DeFi applications, GameFi, NFT trading
+
+  </Tab>
+
+  <Tab title="Polygon">
+    **Polygon** (formerly Matic) is a sidechain solution for Ethereum.
+
+    **Features:**
+    - 2 second block time
+    - Extremely low transaction fees
+    - Inherits Ethereum security
+    - Strong enterprise partnerships
+
+    **Use Cases:** NFT marketplaces, gaming applications, enterprise-grade applications
+
+  </Tab>
+
+  <Tab title="Avalanche">
+    **Avalanche** is a high-performance Layer 1 blockchain platform.
+
+    **Features:**
+    - Sub-second transaction confirmation
+    - 4500+ TPS throughput
+    - Subnet architecture supports customization
+    - Strong DeFi ecosystem
+
+    **Use Cases:** DeFi protocols, enterprise applications, games
+
+  </Tab>
+
+  <Tab title="Fantom">
+    **Fantom** is a high-speed blockchain using the Lachesis consensus mechanism.
+
+    **Features:**
+    - 1-2 second transaction confirmation
+    - Extremely low transaction costs
+    - High throughput
+    - Focus on DeFi
+
+    **Use Cases:** DeFi applications, payment systems
+
+  </Tab>
+</Tabs>
+
+### Layer 2 Scaling Solutions
+
+<Tabs>
+  <Tab title="Arbitrum">
+    **Arbitrum** is an Optimistic Rollup Layer 2 solution for Ethereum.
+
+    **Features:**
+    - Inherits Ethereum security
+    - 90%+ reduction in transaction fees
+    - Full EVM compatibility
+    - Mainstream DeFi protocol support
+
+    **Use Cases:** DeFi, NFT, GameFi
+
+  </Tab>
+
+  <Tab title="Optimism">
+    **Optimism** is another major Optimistic Rollup solution.
+
+    **Features:**
+    - Ethereum-level security
+    - Significantly reduced Gas fees
+    - Strong developer community
+    - OP Stack technology
+
+    **Use Cases:** DeFi applications, social applications
+
+  </Tab>
+
+  <Tab title="Base">
+    **Base** is a Layer 2 network launched by Coinbase.
+
+    **Features:**
+    - Based on Optimism OP Stack
+    - Coinbase ecosystem integration
+    - Low cost high performance
+    - Mainstream application support
+
+    **Use Cases:** Consumer applications, social, games
+
+  </Tab>
+
+  <Tab title="zkSync Era">
+    **zkSync Era** is a Layer 2 solution based on ZK-Rollup.
+
+    **Features:**
+    - Zero-knowledge proof technology
+    - Higher security
+    - Fast finality
+    - Privacy protection
+
+    **Use Cases:** Applications requiring high security
+
+  </Tab>
+</Tabs>
+
+## EVM Chain Comparison
+
+The following table compares key metrics of major EVM compatible chains:
+
+| Chain Name | Type      | Block Time | Avg Gas Fee | TPS    | TVL (Total Value Locked) |
+| ---------- | --------- | ---------- | ----------- | ------ | ------------------------ |
+| Ethereum   | Layer 1   | 12s        | $5-50       | 15-30  | Highest                  |
+| BNB Chain  | Layer 1   | 3s         | $0.1-0.5    | 160    | High                     |
+| Polygon    | Sidechain | 2s         | $0.01-0.1   | 7,000  | High                     |
+| Arbitrum   | Layer 2   | 0.25s      | $0.1-1      | 4,000  | High                     |
+| Optimism   | Layer 2   | 2s         | $0.1-1      | 2,000  | Medium-High              |
+| Base       | Layer 2   | 2s         | $0.05-0.5   | 2,000+ | Medium                   |
+| Avalanche  | Layer 1   | 2s         | $0.1-2      | 4,500  | Medium                   |
+
+<Note>The above data varies with network usage and market conditions, for reference only.</Note>
+
+## Monitor EVM Chains on AlertDog
+
+AlertDog supports comprehensive EVM chain monitoring features to help you track on-chain activities in real-time:
+
+<CardGroup cols={2}>
+  <Card
+    title="Address Monitoring"
+    icon="wallet"
+    href="/en/monitors/evm-chain/wallet-monitoring"
+  >
+    Monitor wallet deposits, withdrawals, swaps and other operations on various EVM chains
+  </Card>
+
+<Card
+  title="Token Monitoring"
+  icon="coins"
+  href="/en/monitors/evm-chain/token-monitoring"
+>
+  Track token TOP holder changes and large transfer activities
+</Card>
+
+<Card
+  title="Multi-Address Monitoring"
+  icon="users"
+  href="/en/monitors/evm-chain/multi-wallet-monitoring"
+>
+  Capture synchronized buy/sell behavior of multiple wallets, discover market opportunities
+</Card>
+
+  <Card title="Large Amount Monitoring" icon="whale" href="/en/monitors/whale-alert">
+    Track whale transfers and large transaction movements in real-time
+  </Card>
+</CardGroup>
+
+## FAQ
+
+<AccordionGroup>
+  <Accordion title="Can I transfer directly between EVM chains?">
+    No, direct transfers are not possible. You need to use bridge services to transfer assets between different EVM chains.
+  </Accordion>
+
+<Accordion title="Is it safe to use the same wallet address on EVM chains?">
+  Yes, you can use the same wallet address (such as MetaMask address) on all EVM chains. However, it's recommended to use different wallet addresses for different purposes to improve security of fund management.
+</Accordion>
+
+<Accordion title="How to add EVM chains to wallet?">
+  In wallets like MetaMask, go to "Settings" → "Networks" → "Add Network", fill in the target EVM chain's RPC URL, chain ID, block explorer URL and other information. Most major EVM chains provide one-click add functionality.
+</Accordion>
+
+  <Accordion title="What are the Gas tokens for different EVM chains?">
+    Each EVM chain has its own native token for paying Gas fees:
+    
+    - Ethereum: ETH
+    - BNB Chain: BNB
+    - Polygon: MATIC
+    - Arbitrum: ETH
+    - Optimism: ETH
+    - Base: ETH
+    - Avalanche: AVAX
+    - Fantom: FTM
+  </Accordion>
+</AccordionGroup>
+

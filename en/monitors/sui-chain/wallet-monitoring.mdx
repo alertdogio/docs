@@ -1,0 +1,76 @@
+---
+title: "SUI Address Monitoring"
+description: "Monitor wallet deposits, withdrawals, swaps and other operations on SUI chain, track wallet fund movements in real-time, be the first to know about buy/sell, transfers and potential abnormal movement opportunities"
+---
+
+## Add Address Monitoring
+
+### Field Description
+
+| Field                      | Description                                                                                                                                        | Notes                                                                                                          |
+| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Wallet Address**         | The wallet address you want to monitor                                                                                                             | Must be a valid wallet address starting with 0x                                                                |
+| **Wallet Name**            | Nickname for the wallet address for easy memory and management                                                                                     | Cannot have duplicate wallet names within the same wallet group                                                |
+| **Wallet Group**           | Assign monitoring to a group for easier viewing and management                                                                                     | First-time users need to create a wallet group, group names cannot be duplicated                               |
+| **Monitoring Type**        | **Token**: Monitor token operations of this wallet (such as: spend/swap/receive)<br />**NFT**: Monitor NFT transactions of wallet (such as: transfer/receive/buy/sell) | -                                                                                                              |
+| **Notification Method**    | Monitoring notification messages will be sent through this method                                                                                  | Multiple notification methods can be selected simultaneously; if all selected methods are disabled, this monitoring is automatically disabled |
+| **Notification Retention** | How long monitoring notification history is retained on the AlertDog webpage                                                                       | Default is 1 day, automatically cleared after expiration                                                       |
+
+### Operation Steps
+
+<Frame caption="Steps to Add SUI Address Monitoring">
+  <img
+    src="/images/monitors/sui-chain/wallet/step-by-step.png"
+    alt="Detailed operation steps diagram for adding SUI address monitoring"
+  />
+</Frame>
+
+### Notification Example
+
+<Frame caption="SUI Address Monitoring Notification Example">
+  <img
+    src="/images/monitors/sui-chain/wallet/notification-example.png"
+    alt="Example notification message after SUI address monitoring triggers"
+  />
+</Frame>
+
+## Manage Address Monitoring
+
+You can manage added address monitoring through the following methods:
+
+- **Filter Wallet Group Management**: After selecting a specific wallet group, you can modify the group name or delete the wallet group
+- **Batch Operations**: Click batch operations to perform batch move to group, batch edit, batch modify notification methods, batch delete on selected wallets
+- **Export**: Wallet list data supports export to Excel format
+- **Monitoring History**: View received monitoring notification history on the unified monitoring history page
+- **Search**: Search for specific wallets
+- **Enable/Disable, Edit, Delete**: Perform enable/disable, edit, delete operations on wallets
+
+<Frame caption="SUI Address Monitoring Management Interface">
+  <img
+    src="/images/monitors/sui-chain/wallet/management.png"
+    alt="SUI address monitoring list and management function interface"
+  />
+</Frame>
+
+## Advanced Settings
+
+You can set filter conditions when adding monitoring to filter out noise and only focus on important transaction activities.
+
+<Frame caption="SUI Advanced Filter Settings">
+  <img
+    src="/images/monitors/sui-chain/wallet/filter-settings.png"
+    alt="SUI advanced filter condition configuration interface"
+  />
+</Frame>
+
+<Frame caption="SUI Filter Condition Configuration Example">
+  <img
+    src="/images/monitors/sui-chain/wallet/filter-example.png"
+    alt="Detailed configuration example for SUI filter conditions"
+  />
+</Frame>
+
+<Tip>
+  SUI chain uses an object model, which is different from other EVM chains. It's recommended to familiarize yourself with SUI-specific concepts before setting up complex filter conditions.
+</Tip>
+

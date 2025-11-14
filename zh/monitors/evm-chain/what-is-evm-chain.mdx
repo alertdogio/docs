@@ -1,0 +1,268 @@
+---
+title: "什么是 EVM 链"
+description: "了解以太坊虚拟机（EVM）兼容链的概念、工作原理、主流 EVM 链介绍以及如何用监控狗监控 EVM 链"
+---
+
+<Info>
+  EVM 链是指与以太坊虚拟机（Ethereum Virtual Machine,
+  EVM）兼容，能够运行以太坊智能合约和去中心化应用（DApp）的区块链网络。
+</Info>
+
+## 什么是 EVM（以太坊虚拟机）
+
+以太坊虚拟机（EVM）是以太坊网络的核心组件，是一个去中心化的计算环境，用于执行智能合约代码。
+
+### EVM 的核心特性
+
+<AccordionGroup>
+  <Accordion title="图灵完备" icon="gear">
+    EVM 是图灵完备的，意味着它可以执行任何算法或计算任务，只要有足够的 Gas
+    费用支持。这使得开发者能够创建复杂的去中心化应用。
+  </Accordion>
+
+<Accordion title="确定性执行" icon="check">
+  相同的输入在 EVM
+  中总是产生相同的输出，确保了智能合约在所有节点上的执行结果一致，维护了网络的共识。
+</Accordion>
+
+<Accordion title="隔离环境" icon="shield">
+  智能合约在 EVM
+  的沙箱环境中运行，与主机系统隔离，保证了安全性，防止恶意代码影响网络。
+</Accordion>
+
+  <Accordion title="Gas 机制" icon="gas-pump">
+    通过 Gas
+    机制限制计算资源的使用，防止无限循环和资源滥用，确保网络的稳定运行。
+  </Accordion>
+</AccordionGroup>
+
+## EVM 兼容链的优势
+
+选择 EVM 兼容链为开发者和用户带来了诸多好处：
+
+### 开发者友好
+
+<CardGroup cols={2}>
+  <Card title="无缝迁移" icon="code-merge">
+    已有的以太坊智能合约可以直接部署到 EVM
+    兼容链上，无需修改代码，大大降低了迁移成本。
+  </Card>
+
+<Card title="丰富工具" icon="toolbox">
+  可以使用 Solidity、Vyper 等成熟的编程语言，以及 Hardhat、Truffle、Remix
+  等开发工具。
+</Card>
+
+<Card title="庞大社区" icon="users">
+  受益于以太坊庞大的开发者社区，可以获得大量的文档、教程和开源项目参考。
+</Card>
+
+  <Card title="标准统一" icon="file-contract">
+    遵循 ERC-20、ERC-721、ERC-1155 等标准，确保代币和 NFT 的互操作性。
+  </Card>
+</CardGroup>
+
+### 用户体验提升
+
+- **更低的交易费用**：相比以太坊主网，EVM 兼容链通常提供更低的 Gas 费用
+- **更快的交易速度**：更短的区块时间和更高的吞吐量，提供更流畅的用户体验
+- **熟悉的钱包**：可以使用 MetaMask、Trust Wallet 等熟悉的以太坊钱包
+- **跨链互操作**：通过跨链桥可以方便地在不同 EVM 链之间转移资产
+
+## 主流 EVM 兼容链介绍
+
+以下是当前市场上主要的 EVM 兼容链：
+
+### Layer 1 公链
+
+<Tabs>
+  <Tab title="BNB Chain">
+    **BNB Chain**（原币安智能链 BSC）是由币安推出的高性能区块链。
+
+    **特点：**
+    - 3 秒区块时间
+    - 低廉的交易费用（通常 < $0.1）
+    - 活跃的 DeFi 生态系统
+    - 与币安交易所深度集成
+
+    **适用场景：** DeFi 应用、GameFi、NFT 交易
+
+  </Tab>
+
+  <Tab title="Polygon">
+    **Polygon**（原 Matic）是以太坊的侧链解决方案。
+
+    **特点：**
+    - 2 秒区块时间
+    - 极低的交易费用
+    - 以太坊安全性继承
+    - 强大的企业合作伙伴
+
+    **适用场景：** NFT 市场、游戏应用、企业级应用
+
+  </Tab>
+
+  <Tab title="Avalanche">
+    **Avalanche** 是一个高性能的 Layer 1 区块链平台。
+
+    **特点：**
+    - 亚秒级交易确认
+    - 4500+ TPS 吞吐量
+    - 子网架构支持定制化
+    - 强大的 DeFi 生态
+
+    **适用场景：** DeFi 协议、企业应用、游戏
+
+  </Tab>
+
+  <Tab title="Fantom">
+    **Fantom** 使用 Lachesis 共识机制的高速区块链。
+
+    **特点：**
+    - 1-2 秒交易确认
+    - 极低的交易成本
+    - 高吞吐量
+    - 专注于 DeFi
+
+    **适用场景：** DeFi 应用、支付系统
+
+  </Tab>
+</Tabs>
+
+### Layer 2 扩容方案
+
+<Tabs>
+  <Tab title="Arbitrum">
+    **Arbitrum** 是以太坊的 Optimistic Rollup Layer 2 解决方案。
+
+    **特点：**
+    - 继承以太坊安全性
+    - 交易费用降低 90%+
+    - 完整 EVM 兼容
+    - 主流 DeFi 协议支持
+
+    **适用场景：** DeFi、NFT、GameFi
+
+  </Tab>
+
+  <Tab title="Optimism">
+    **Optimism** 是另一个主要的 Optimistic Rollup 方案。
+
+    **特点：**
+    - 以太坊级别安全
+    - 显著降低 Gas 费用
+    - 强大的开发者社区
+    - OP Stack 技术栈
+
+    **适用场景：** DeFi 应用、社交应用
+
+  </Tab>
+
+  <Tab title="Base">
+    **Base** 是 Coinbase 推出的 Layer 2 网络。
+
+    **特点：**
+    - 基于 Optimism OP Stack
+    - Coinbase 生态集成
+    - 低成本高性能
+    - 主流应用支持
+
+    **适用场景：** 消费级应用、社交、游戏
+
+  </Tab>
+
+  <Tab title="zkSync Era">
+    **zkSync Era** 是基于 ZK-Rollup 的 Layer 2 方案。
+
+    **特点：**
+    - 零知识证明技术
+    - 更高的安全性
+    - 快速最终确认
+    - 隐私保护
+
+    **适用场景：** 需要高安全性的应用
+
+  </Tab>
+</Tabs>
+
+## EVM 链对比
+
+下表对比了主流 EVM 兼容链的关键指标：
+
+| 链名称    | 类型      | 区块时间 | 平均 Gas 费 | TPS    | TVL（锁定总价值） |
+| --------- | --------- | -------- | ----------- | ------ | ----------------- |
+| Ethereum  | Layer 1   | 12 秒    | $5-50       | 15-30  | 最高              |
+| BNB Chain | Layer 1   | 3 秒     | $0.1-0.5    | 160    | 高                |
+| Polygon   | Sidechain | 2 秒     | $0.01-0.1   | 7,000  | 高                |
+| Arbitrum  | Layer 2   | 0.25 秒  | $0.1-1      | 4,000  | 高                |
+| Optimism  | Layer 2   | 2 秒     | $0.1-1      | 2,000  | 中高              |
+| Base      | Layer 2   | 2 秒     | $0.05-0.5   | 2,000+ | 中                |
+| Avalanche | Layer 1   | 2 秒     | $0.1-2      | 4,500  | 中                |
+
+<Note>以上数据会随着网络使用情况和市场条件而变化，仅供参考。</Note>
+
+## 在 AlertDog 上监控 EVM 链
+
+AlertDog 支持全面的 EVM 链监控功能，帮助您实时追踪链上活动：
+
+<CardGroup cols={2}>
+  <Card
+    title="地址监控"
+    icon="wallet"
+    href="/zh/monitors/evm-chain/wallet-monitoring"
+  >
+    监控钱包在 EVM 各链的转入、转出、兑换等操作
+  </Card>
+
+<Card
+  title="代币监控"
+  icon="coins"
+  href="/zh/monitors/evm-chain/token-monitoring"
+>
+  追踪代币 TOP 持仓变动和大额转账行为
+</Card>
+
+<Card
+  title="多地址监控"
+  icon="users"
+  href="/zh/monitors/evm-chain/multi-wallet-monitoring"
+>
+  捕捉多钱包同步买卖行为，发现市场机会
+</Card>
+
+  <Card title="大额监控" icon="whale" href="/zh/monitors/whale-alert">
+    实时追踪巨鲸转账和大额交易动向
+  </Card>
+</CardGroup>
+
+## 常见问题
+
+<AccordionGroup>
+  <Accordion title="EVM 链之间可以直接转账吗？">
+    不可以直接转账。需要使用跨链桥（Bridge）服务来在不同 EVM
+    链之间转移资产。
+  </Accordion>
+
+<Accordion title="在 EVM 链上使用相同的钱包地址安全吗？">
+  是的，您可以在所有 EVM 链上使用相同的钱包地址（如 MetaMask
+  地址）。但建议根据不同用途使用不同的钱包地址，以提高资金管理的安全性。
+</Accordion>
+
+<Accordion title="如何在钱包中添加 EVM 链？">
+  在 MetaMask 等钱包中，进入"设置" → "网络" → "添加网络"，填入目标 EVM 链的 RPC
+  URL、链 ID、区块浏览器 URL 等信息即可。大多数主流 EVM 链都提供了一键添加功能。
+</Accordion>
+
+  <Accordion title="不同 EVM 链的 Gas 代币是什么？">
+    每个 EVM 链都有自己的原生代币用于支付 Gas 费用：
+    
+    - Ethereum: ETH
+    - BNB Chain: BNB
+    - Polygon: MATIC
+    - Arbitrum: ETH
+    - Optimism: ETH
+    - Base: ETH
+    - Avalanche: AVAX
+    - Fantom: FTM
+  </Accordion>
+</AccordionGroup>

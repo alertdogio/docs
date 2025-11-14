@@ -1,0 +1,96 @@
+---
+title: "Group Notification"
+description: "Receive AlertDog monitoring alert messages via Telegram bot, instant push, convenient to use"
+---
+
+
+<Note>
+  Group notifications can receive up to 20 messages per minute. For higher limits, upgrade to VIP and set up a custom Bot
+</Note>
+
+
+
+## Operation Steps
+
+<Steps>
+
+<Step title="Get Chat ID">
+  Open Telegram, create a group and invite MCT Bot
+
+  <Frame caption="Create Group">
+  <img
+    src="/images/notification-channels/telegram/Group 1948.png"
+    alt="Create group"
+  />
+</Frame>
+
+Search for MCT_CLUB_BOT and add it to the group
+
+
+  <Frame >
+  <img
+    src="/images/notification-channels/telegram/Group 1949.png"
+    alt="Telegram search for MCT_CLUB_BOT"
+  />
+</Frame>
+
+ <Frame >
+  <img
+    src="/images/notification-channels/telegram/Group 1950.png"
+    alt="Telegram add MCT Bot to group"
+  />
+</Frame>
+
+
+</Step>
+
+<Step title="Copy Chat ID">
+After successful addition, MCT Bot will automatically send the Chat ID in the group, copy the Chat ID
+
+  <Frame caption="Copy Chat ID">
+  <img
+    src="/images/notification-channels/telegram/Group 1951.png"
+    alt="Copy Chat ID"
+  />
+</Frame>
+
+</Step>
+
+<Step title="Create Notification Channel">
+  Open AlertDog console, select Telegram, enter the ID and click connect
+   <Frame caption="Create Notification Channel">
+  <img
+    src="/images/notification-channels/telegram/telegram-group-notification.png"
+    alt="Create notification channel"
+  />
+</Frame>
+</Step>
+
+<Step title="Creation Complete">
+After successful connection, the notification channel has been successfully added and will appear in the notification channel list
+<Frame caption="Creation Complete">
+  <img
+    src="/images/notification-channels/telegram/telegram-group-created.png"
+    alt="Creation complete"
+  />
+</Frame>
+
+</Step>
+
+</Steps>
+
+
+
+## FAQ
+
+<AccordionGroup>
+<Accordion title="How to unbind Telegram?">
+  Find the Telegram item in the notification channel list and click "Delete" to unbind.
+</Accordion>
+
+<Accordion title="Can I invite the Telegram bot to multiple groups for binding?">
+ Yes.
+</Accordion>
+
+</AccordionGroup>
+

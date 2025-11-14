@@ -1,0 +1,96 @@
+---
+title: "DingTalk"
+description: "Receive AlertDog monitoring alert messages via DingTalk robot, enterprise office platform notification method"
+---
+
+Introduction: DingTalk is an enterprise-level office platform that supports pushing monitoring messages through group robots, suitable for enterprise teams, allowing real-time viewing of monitoring alerts in DingTalk groups.
+
+
+
+## Operation Steps
+
+<Steps>
+<Step title="Create Robot">
+  Open DingTalk, find settings in the group, create a robot
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-robot-settings.png"
+    alt="DingTalk group settings interface showing smart group assistant options"
+  />
+</Frame>
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-add-robot.png"
+    alt="DingTalk add robot interface, select custom robot"
+  />
+</Frame>
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-select-webhook.png"
+    alt="DingTalk select Webhook type robot"
+  />
+</Frame>
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-create-group.png"
+    alt="DingTalk create custom robot configuration interface"
+  />
+</Frame>
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-group-created.png"
+    alt="DingTalk robot creation success interface"
+  />
+</Frame>
+</Step>
+
+<Step title="Copy Secret and Webhook URL">
+  After creation, copy the secret and Webhook URL
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/Group 1947.png"
+    alt="DingTalk robot configuration complete, showing Webhook URL and signature secret"
+  />
+</Frame>
+<Frame >
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-copy-webhook.png"
+    alt="DingTalk copy Webhook URL and secret"
+  />
+</Frame>
+
+</Step>
+<Step title="Create Notification Channel">
+  Open AlertDog, select DingTalk, enter the secret and Webhook URL, confirm
+   <Frame caption="Create Notification Channel">
+  <img
+    src="/images/notification-channels/dingtalk/dingtalk-alertdog-config.png"
+    alt="Create notification channel"
+  />
+</Frame>
+</Step>
+</Steps>
+
+
+<Note>
+  You need to add a custom robot in the DingTalk group, then copy the robot's Webhook URL to AlertDog.
+</Note>
+
+Usage Instructions: After configuration, you can select DingTalk as the notification method when creating monitoring tasks. When monitoring triggers, messages will be pushed to the specified DingTalk group.
+
+## FAQ
+
+<AccordionGroup>
+<Accordion title="How to add a robot in DingTalk?">
+  In DingTalk group settings → Smart Group Assistant → Add Robot → Custom Robot to create and get the Webhook URL.
+</Accordion>
+
+<Accordion title="What is signature verification?">
+  DingTalk robots support signature verification to enhance security. If signature verification is enabled, you need to configure the signature secret in AlertDog.
+</Accordion>
+
+<Accordion title="Does DingTalk robot have message frequency limits?">
+  DingTalk robots have certain frequency limits, a maximum of 20 messages per minute.
+</Accordion>
+</AccordionGroup>
+
