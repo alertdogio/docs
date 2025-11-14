@@ -283,5 +283,10 @@
       "x": "https://x.com/alertdogio",
       "github": "https://github.com/alertdogio"
     }
+  },
+  "integrations": {
+    "gtm": {
+      "tagId": "GTM-PWC4DNTL"
+    }
   }
 }
