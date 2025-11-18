@@ -21,7 +21,7 @@
               {
                 "group": "开始使用",
                 "icon": "rocket",
-                "pages": ["zh/introduction", "zh/quickstart", "zh/sign-in"]
+                "pages": ["zh/introduction", "zh/quickstart"]
               },
               {
                 "group": "链上监控",
@@ -77,7 +77,7 @@
                     "pages": [
                       "zh/notification-channels/telegram",
                       "zh/notification-channels/telegram-group",
-                      "zh/notification-channels/telegram-bot"
+                      "zh/notification-channels/custom-telegram-bot"
                     ]
                   },
                   "zh/notification-channels/discord",
@@ -91,9 +91,9 @@
                 ]
               },
               {
-                "group": "用户设置",
+                "group": "用户 & 设置",
                 "icon": "gear",
-                "pages": ["zh/settings/user-settings"]
+                "pages": ["zh/settings/sign-in", "zh/settings/user-settings"]
               },
               {
                 "group": "更新日志",
@@ -144,7 +144,7 @@
               {
                 "group": "Getting Started",
                 "icon": "rocket",
-                "pages": ["en/introduction", "en/quickstart", "en/sign-in"]
+                "pages": ["en/introduction", "en/quickstart"]
               },
               {
                 "group": "On-Chain Monitoring",
@@ -200,7 +200,7 @@
                     "pages": [
                       "en/notification-channels/telegram",
                       "en/notification-channels/telegram-group",
-                      "en/notification-channels/telegram-bot"
+                      "en/notification-channels/custom-telegram-bot"
                     ]
                   },
                   "en/notification-channels/discord",
@@ -216,7 +216,7 @@
               {
                 "group": "User Settings",
                 "icon": "gear",
-                "pages": ["en/settings/user-settings"]
+                "pages": ["en/settings/sign-in", "en/settings/user-settings"]
               },
               {
                 "group": "Changelog",
@@ -251,7 +251,7 @@
                 ]
               },
               {
-                "group": "User Settings",
+                "group": "User & Settings",
                 "pages": ["en/faq/what-is-vip-membership"]
               }
             ]
@@ -269,19 +269,38 @@
     "links": [
       {
         "label": "升级 Pro",
-        "href": "https://alertdog.io/price"
+        "href": "https://alertdog.io/pricing?utm_source=docs_navbar"
       }
     ],
     "primary": {
       "type": "button",
       "label": "控制台",
-      "href": "https://alertdog.io"
+      "href": "https://alertdog.io/?utm_source=docs_navbar"
     }
   },
   "footer": {
     "socials": {
       "x": "https://x.com/alertdogio",
       "github": "https://github.com/alertdogio"
+    }
+  },
+  "seo": {
+    "metatags": {
+      "canonical": "https://docs.alertdog.io",
+      "revisit-after": "3 days",
+      "color-scheme": "light dark",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "description": "新一代 Web3 链上监控报警系统: 实时追踪、智能提醒、多链支持。为加密投资者和开发者而生",
+      "keywords": "AlertDog, Web3, 链上监控, 加密货币, 钱包监控, 巨鲸监控, 报警系统, 加密投资者, 监控API, Bitcoin, Ethereum, solana, Whale Tracking, Wallet Monitoring, On-chain Monitoring, EVM, Telegram alert, SUI Monitoring",
+      "author": "alertdogio",
+      "robots": "index, follow",
+      "googlebot": "index, follow",
+      "og:image": "https://res.mct.club/twitter-poster-alertdog.png",
+      "og:title": "AlertDog Docs",
+      "og:type": "website",
+      "og:url": "https://docs.alertdog.io",
+      "og:description": "新一代 Web3 链上监控报警系统: 实时追踪、智能提醒、多链支持。为加密投资者和开发者而生"
     }
   },
   "integrations": {
