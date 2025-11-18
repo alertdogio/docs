@@ -121,14 +121,14 @@
             "tab": "FAQ 常见问题",
             "groups": [
               {
-                "group": "监控使用",
+                "group": "监控使用问题",
                 "pages": [
                   "zh/faq/why-no-notifications",
                   "zh/faq/how-to-filter-spam-tokens"
                 ]
               },
               {
-                "group": "用户设置",
+                "group": "其他问题",
                 "pages": ["zh/faq/what-is-vip-membership"]
               }
             ]
