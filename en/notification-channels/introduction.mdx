@@ -1,58 +1,60 @@
 ---
-title: "Overview"
-description: "Learn about the various notification channels supported by AlertDog and choose the message push method that suits you best"
-"og:title": "Overview - Notification Channels - AlertDog Docs"
+title: "Notification Introduction"
+description: "AlertDog is the platform with the most comprehensive notification channel support across the web, you can choose the message push method that best suits your needs"
+"og:title": "Alert Notification Channels Introduction - AlertDog Docs"
 ---
 
 ## Overview
 
-AlertDog supports multiple notification channels, allowing you to receive monitoring alert messages in the most convenient way.
+AlertDog supports multiple notification channels, allowing you to receive monitoring alerts in the most convenient way.
 
 ## Supported Notification Channels
 
-AlertDog supports 9 notification channels to meet different scenarios and user needs.
+AlertDog supports the following notification channels to meet different scenarios and user needs. We will add more channels based on market changes and user demand.
+
+If you have custom notification channel needs, please <Icon icon="comments" iconType="duotone" /> [Contact Us](/en/contact-us)
 
 ### Instant Messaging Platforms
 
 <CardGroup cols={2}>
   <Card title="Telegram" icon="telegram" href="/en/notification-channels/telegram">
-    Supports personal/group/custom Bot notifications.
-    Instant push, globally available
+    Supports notifications to personal/group/custom Bot and other methods.
+    Instant push, available worldwide
   </Card>
 
   <Card title="Discord Channel" icon="discord" href="/en/notification-channels/discord">
    
-    Supports channel notifications, share monitoring information with team members in real-time, suitable for communities and teams
+    Supports channel notifications, real-time sharing of monitoring information with team members, suitable for communities and teams
   </Card>
 </CardGroup>
 
 ### Enterprise Office Platforms
 
 <CardGroup cols={3}>
-  <Card title="FeiShu" icon="feather" href="/en/notification-channels/feishu">
-    Enterprise collaboration platform, supports group robot push, suitable for team collaboration
+  <Card title="FeiShu (Lark)" icon="https://lf-package-cn.feishucdn.com/obj/lark-open-web/file/a5bd8d1c9b354a0d0e1ab0ed04cdd7e4.png" href="/en/notification-channels/feishu">
+    FeiShu enterprise collaboration platform, supports group bot push
   </Card>
 
-  <Card title="DingTalk" icon="comment" href="/en/notification-channels/dingtalk">
-    Enterprise office platform, supports group robots, up to 20 messages per minute
+  <Card title="DingTalk" icon="https://img.alicdn.com/imgextra/i4/O1CN01RtfAks1Xa6qJFAekm_!!6000000002939-2-tps-128-128.png" href="/en/notification-channels/dingtalk">
+    Enterprise office platform, supports group bots, maximum 20 messages per minute
   </Card>
 
-  <Card title="WeChat Work" icon="wechat" href="/en/notification-channels/workwechat">
-    WeChat Work group push, suitable for teams using WeChat Work
+  <Card title="WeCom" icon="weixin" iconType="brands" href="/en/notification-channels/wecom">
+    WeCom group push, suitable for users using WeCom
   </Card>
 </CardGroup>
 
 ### Mobile Device Push
 
 <CardGroup cols={2}>
-  <Card title="Bark Mobile Push" icon="mobile" href="/en/notification-channels/bark">
+  <Card title="Bark Mobile Push" icon="apple" href="/en/notification-channels/bark">
     
     Push to Apple devices, supports offline notifications and custom ringtones
   </Card>
 
-  <Card title="Mobile App" icon="mobile-screen" href="/en/notification-channels/mobile-app">
+  <Card title="Mobile App" icon="mobile-vibrate" href="/en/notification-channels/mobile-app">
     
-    Supports iOS and Android platforms, receive monitoring alert messages anytime, anywhere
+    Supports iOS and Android platforms, receive monitoring alerts anytime, anywhere
   </Card>
 </CardGroup>
 
@@ -61,7 +63,7 @@ AlertDog supports 9 notification channels to meet different scenarios and user n
 <CardGroup cols={2}>
   <Card title="Webhook" icon="webhook" href="/en/notification-channels/webhook">
     
-    Supports custom HTTP endpoints, enables deep integration with your applications or workflows
+    Supports custom HTTP endpoints for deep integration with your applications or workflows
   </Card>
 
   <Card title="Email" icon="envelope" href="/en/notification-channels/email">
@@ -72,56 +74,58 @@ AlertDog supports 9 notification channels to meet different scenarios and user n
 
 ## How to Add Notification Channels
 
-<Steps>
-  <Step title="Enter Console">
-    After logging into AlertDog, click "Console" in the top left corner to enter the management interface
+
+  
+## Step 1: Enter Console
+    After logging into AlertDog, click "Console" in the upper left corner to enter the management interface
   </Step>
 
-  <Step title="Select Notification Channels">
+  
+## Step 2: Select Notification Channels
     Find the "Notification Channels" option in the left menu
   </Step>
 
-  <Step title="Add Channel">
+  
+## Step 3: Add Channel
     Click "Add Notification Channel" and select the notification method you need
   </Step>
 
-  <Step title="Complete Configuration">
-    Complete the corresponding configuration or binding operation as prompted
+  
+## Step 4: Complete Configuration
+    Complete the corresponding configuration or binding operation according to the prompts
   </Step>
-</Steps>
 
 <Tip>
-  You can add multiple notification channels simultaneously and select which channels to use for notifications when creating monitoring. Different monitoring tasks can be configured with different notification channel combinations.
+  You can add multiple notification channels at the same time and select which channels to use to receive notifications when creating monitors. Different monitoring tasks can be configured with different notification channel combinations.
 </Tip>
 
 ## FAQ
 
 <AccordionGroup>
-<Accordion title="Can I use multiple notification channels simultaneously?">
-  Yes. You can configure multiple notification channels for the same monitoring task. When monitoring triggers, notifications will be sent to all configured channels simultaneously.
+<Accordion title="Can I use multiple notification channels at the same time?">
+  Yes. You can configure multiple notification channels for the same monitoring task. When monitoring is triggered, notifications will be sent to all configured channels simultaneously.
 </Accordion>
 
 <Accordion title="Which notification channel is the fastest?">
-  Telegram and Webhook have the fastest push speeds, usually at the millisecond level. If you need the fastest notification response, it's recommended to use Telegram personal notification or Webhook.
+  Telegram and Webhook have the fastest push speeds, usually in milliseconds. If you need the fastest notification response, we recommend using Telegram personal notification or Webhook.
 </Accordion>
 
 <Accordion title="Which notification channel should enterprise users choose?">
   Enterprise users can choose based on team usage habits:
-  - FeiShu: Suitable for enterprises using ByteDance office suites
+  - FeiShu (Lark): Suitable for enterprises using ByteDance office suite
   - DingTalk: Suitable for enterprise users in the Alibaba ecosystem
-  - WeChat Work: Suitable for enterprise users in the Tencent ecosystem
-  - Discord Channel: Suitable for overseas teams or technical communities
+  - WeCom: Suitable for enterprises in the Tencent ecosystem
+  - Discord Channel: Suitable for overseas teams or tech communities
 </Accordion>
 
 <Accordion title="What are the message limits for notification channels?">
   Different channels have different limits:
-  - Telegram Personal: Up to 30 messages per second
-  - Telegram Group: Up to 20 messages per minute
-  - DingTalk: Up to 20 messages per minute
+  - Telegram personal: Maximum 30 per second
+  - Telegram group: Maximum 20 per minute
+  - DingTalk: Maximum 20 per minute
   - Webhook: No limit (depends on your server)
   
-  For higher limits, upgrade to VIP and use custom Telegram Bot.
+  For higher limits, you can upgrade to VIP and use custom Telegram Bot.
 </Accordion>
 </AccordionGroup>
-
 

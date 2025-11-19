@@ -7,30 +7,24 @@ description: "通过自定义 Webhook 接收 AlertDog 监控报警消息，开�
 简介：Webhook 是开发者友好的通知方式，支持将监控消息推送到你自定义的 HTTP 端点，实现与你的应用程序或工作流的深度集成。
 
 
-
 # 操作步骤
 
-<Steps>
-<Step title="配置 Webhook">
-  获取webhook
-</Step>
 
-<Step title="添加Webhook">
-  点击"添加通知渠道"，选择 Webhook 选项，输入webook链接
+## 第一步：获取 Webhook
+  在你喜欢的平台, 生成 Webhook URL 地址
+
+## 第二步：创建 Webhook 通知渠道并配置
+  打开监控狗 **添加新渠道** -> **Webhook** -> **输入 Webhook URL** -> **确定**
+
 <Frame >
   <img
     src="/images/notification-channels/webhook/webhook-url-config.png"
     alt="AlertDog 中配置 Webhook URL"
   />
 </Frame>
-</Step>
 
-
-
-<Step title="完成添加">
+## 第三步：完成添加
   点击"确认"完成 Webhook 通知渠道配置
-</Step>
-</Steps>
 
 ## Webhook 消息格式
 

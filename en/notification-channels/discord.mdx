@@ -1,16 +1,12 @@
 ---
 title: "Discord"
-description: "Receive AlertDog monitoring alert messages through Discord channels, preferred notification method for team collaboration"
-"og:title": "Discord - Notification Channels - AlertDog Docs"
+description: "Receive AlertDog monitoring alerts through Discord channels, the preferred notification method for team collaboration"
+"og:title": "Send Alert Notifications to Discord - Notification Channels - AlertDog Docs"
 ---
 
-Introduction: Discord is an ideal notification channel for team collaboration, supporting pushing monitoring messages to specified Discord channels, making it convenient for team members to share monitoring information.
+Introduction: Discord is an ideal notification channel for team collaboration, supporting pushing monitoring messages to specified Discord channels, making it easy for team members to share monitoring information.
 
-## Operation Steps
-
-<Steps>
-
-<Step title="Create Server">
+## Step 1: Create Server
 Open Discord, add a server.
 
 <Frame caption="Add Server">
@@ -43,9 +39,8 @@ Follow the prompts to add.
   />
 </Frame>
 
-</Step>
 
-<Step title="Copy Webhook URL">
+## Step 2: Copy Webhook URL
 After the server is created, find Webhook in settings.
 
 <Frame caption="Open Settings">
@@ -55,7 +50,7 @@ After the server is created, find Webhook in settings.
   />
 </Frame>
 
-Create a Webhook.
+Create Webhook.
 
 <Frame caption="Webhook Settings">
   <img
@@ -71,7 +66,7 @@ Create a Webhook.
   />
 </Frame>
 
-Copy the Webhook URL.
+Copy Webhook URL.
 
 <Frame caption="Copy Webhook URL">
   <img
@@ -79,9 +74,8 @@ Copy the Webhook URL.
     alt="Copy Discord Webhook URL"
   />
 </Frame>
-</Step>
 
-<Step title="Create Notification Channel">
+## Step 3: Create Notification Channel
 Open AlertDog, select Discord, enter the Webhook URL and click connect.
 
 <Frame caption="Create Notification Channel">
@@ -90,23 +84,18 @@ Open AlertDog, select Discord, enter the Webhook URL and click connect.
     alt="AlertDog add Discord notification channel, enter Webhook URL"
   />
 </Frame>
-</Step>
 
-<Step title="Creation Complete">
-After successful connection, the notification channel has been successfully added and will appear in the notification channel list.
+## Step 4: Setup Complete
+After successful connection, the notification channel has been successfully added and will be displayed in the notification channel list.
 
-<Frame caption="Creation Complete">
+<Frame caption="Setup Complete">
   <img
     src="/images/notification-channels/discord/discord-channel-created.png"
-    alt="Discord notification channel created successfully, shown in list"
+    alt="Discord notification channel created successfully, displayed in list"
   />
 </Frame>
 
-</Step>
-
-</Steps>
-
-Usage Instructions: After configuration, you can select Discord as the notification method when creating monitoring tasks. When monitoring triggers, messages will be pushed to the specified Discord channel.
+After configuration, you can select Discord as the notification method when creating monitoring tasks. When monitoring is triggered, messages will be pushed to the specified Discord channel.
 
 ## FAQ
 
@@ -120,7 +109,6 @@ Usage Instructions: After configuration, you can select Discord as the notificat
 </Accordion>
 
 <Accordion title="Where to get the Webhook URL?">
-  In Discord server's channel settings → Integrations → Webhook to create and copy the URL.
+  In Discord server channel settings → Integrations → Webhooks, create and copy the URL.
 </Accordion>
 </AccordionGroup>
-

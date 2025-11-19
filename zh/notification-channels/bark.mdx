@@ -13,41 +13,28 @@ description: "通过 Bark 推送消息到 iOS 设备，支持离线通知，Appl
 
 # 操作步骤
 
-<Steps>
-<Step title="打开bark获取url">
-  打开bark获取url
-    <Frame caption="复制url">
+
+## 第一步：打开 Bark 获取推送 URL
+  在 iOS 设备打开 Bark 获取你专属的推送 URL
+    <Frame caption="复制你的 Bark 专属推送 URL">
   <img
     src="/images/notification-channels/bark/bark-notification-test.png"
-    alt="复制url"
+    alt="复制Bark 推送 URL"
+    style={{ maxHeight: "500px" }}
   />
 </Frame>
-</Step>
 
-<Step title="创建通知渠道">
-  打开 AlertDog，选择bark， 输入url并点击连接
+## 第二步：创建 Bark 通知渠道并填入推送 URL
+  打开监控狗 **添加新渠道** -> **Bark** -> **输入你的 Bark 专属推送 URL** -> **确定**
    <Frame caption="创建通知渠道">
   <img
     src="/images/notification-channels/bark/bark-key-config.png"
     alt="创建通知渠道"
   />
 </Frame>
-</Step>
 
-<Step title="创建完成">
-连接成功后，该通知渠道已添加成功，通知渠道列表中会显示该条通知渠道
-
-
-</Step>
-</Steps>
-
-## 获取 Bark 推送 Key
-
-1. 在 iOS 设备上打开 Bark App
-2. 复制显示的推送 Key
-3. 将 Key 填入 AlertDog 配置中
-
-使用说明：配置完成后，监控触发时消息将通过 APNs 推送到你的 iOS 设备，即使在息屏或离线状态下也能收到通知。
+## 第三步：创建完成
+配置完成后，监控触发时消息将通过 APNs 推送到你的 iOS 设备，即使在息屏或离线状态下也能收到通知。
 
 # 常见问题
 

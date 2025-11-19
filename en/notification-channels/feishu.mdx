@@ -1,33 +1,30 @@
 ---
-title: "FeiShu"
-description: "Receive AlertDog monitoring alert messages via FeiShu robot, preferred notification method for enterprise collaboration platforms"
-"og:title": "FeiShu - Notification Channels - AlertDog Docs"
+title: "FeiShu (Lark)"
+description: "Receive AlertDog monitoring alerts through FeiShu bot, preferred notification method for enterprise collaboration platform"
+"og:title": "FeiShu Channel - Notification Channels - AlertDog Docs"
 ---
 
-Introduction: FeiShu is an enterprise-level collaboration platform that supports pushing monitoring messages through group robots, suitable for team use, allowing real-time viewing of monitoring alerts in FeiShu groups.
+Introduction: FeiShu is an enterprise-level collaboration platform that supports pushing monitoring messages through group bots, suitable for teams, allowing real-time viewing of monitoring alerts in FeiShu groups.
 
 
-
-## Operation Steps
-<Steps>
-<Step title="Create Robot">
-  Open FeiShu, find settings in the group, create a robot
+## Step 1: Create Bot
+  Open FeiShu, find settings in the group, create a bot
 <Frame >
   <img
     src="/images/notification-channels/feishu/feishu-robot-settings.png"
-    alt="FeiShu group settings interface showing robot management options"
+    alt="FeiShu group settings interface showing bot management option"
   />
 </Frame>
 <Frame >
   <img
     src="/images/notification-channels/feishu/feishu-add-robot.png"
-    alt="FeiShu add robot interface, select custom robot"
+    alt="FeiShu add bot interface, select custom bot"
   />
 </Frame>
 <Frame >
   <img
     src="/images/notification-channels/feishu/feishu-robot-name.png"
-    alt="FeiShu robot naming interface, enter robot name"
+    alt="FeiShu bot naming interface, enter bot name"
   />
 </Frame>
 <Frame >
@@ -39,17 +36,16 @@ Introduction: FeiShu is an enterprise-level collaboration platform that supports
 <Frame >
   <img
     src="/images/notification-channels/feishu/feishu-group-settings.png"
-    alt="FeiShu group settings interface showing robot configuration"
+    alt="FeiShu group settings interface showing bot configuration"
   />
 </Frame>
-</Step>
 
-<Step title="Copy Secret and Webhook URL">
+## Step 2: Copy Secret and Webhook URL
   After creation, copy the secret and Webhook URL
 <Frame >
   <img
     src="/images/notification-channels/feishu/feishu-copy-webhook.png"
-    alt="FeiShu robot Webhook URL and secret copy interface"
+    alt="FeiShu bot Webhook URL and secret copy interface"
   />
 </Frame>
 <Frame >
@@ -59,39 +55,34 @@ Introduction: FeiShu is an enterprise-level collaboration platform that supports
   />
 </Frame>
 
-</Step>
-<Step title="Create Notification Channel">
-  Open AlertDog, select FeiShu, enter the secret and Webhook URL, confirm
+
+## Step 3: Create Notification Channel
+  Open AlertDog, select FeiShu, enter the secret and Webhook URL, then confirm
    <Frame caption="Create Notification Channel">
   <img
     src="/images/notification-channels/dingtalk/dingtalk-alertdog-config.png"
     alt="Create notification channel"
   />
 </Frame>
-</Step>
-</Steps>
-
-
 
 <Note>
-  You need to add a custom robot in the FeiShu group, then copy the robot's Webhook URL to AlertDog.
+  You need to add a custom bot in the FeiShu group, then copy the bot's Webhook URL to AlertDog.
 </Note>
 
-Usage Instructions: After configuration, you can select FeiShu as the notification method when creating monitoring tasks. When monitoring triggers, messages will be pushed to the specified FeiShu group.
+Usage Instructions: After configuration, you can select FeiShu as the notification method when creating monitoring tasks. When monitoring is triggered, messages will be pushed to the specified FeiShu group.
 
 ## FAQ
 
 <AccordionGroup>
-<Accordion title="How to add a robot in FeiShu?">
-  In FeiShu group settings → Group Robot → Add Robot → Custom Robot to create and get the Webhook URL.
+<Accordion title="How to add a bot in FeiShu?">
+  In FeiShu group settings → Group Bots → Add Bot → Create a custom bot and get the Webhook URL.
 </Accordion>
 
 <Accordion title="Can I add multiple FeiShu groups?">
   Yes. You can configure multiple Webhooks for different FeiShu groups to implement categorized notifications.
 </Accordion>
 
-<Accordion title="Does FeiShu robot have message frequency limits?">
-  FeiShu robots have certain frequency limits. Please refer to FeiShu's official documentation for specific limits.
+<Accordion title="Do FeiShu bots have message frequency limits?">
+  FeiShu bots have certain frequency limits, please refer to FeiShu's official documentation for specific limits.
 </Accordion>
 </AccordionGroup>
-
