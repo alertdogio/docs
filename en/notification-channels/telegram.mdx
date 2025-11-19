@@ -1,19 +1,20 @@
 ---
-title: "Personal Notification"
-description: "Receive AlertDog monitoring alert messages via Telegram bot, instant push, convenient to use"
-"og:title": "Personal Notification - AlertDog Docs"
+title: "Notify to Personal"
+description: "Receive AlertDog monitoring alerts through Telegram bot, instant push, easy to use"
+"og:title": "Telegram Notify to Personal - Notification Channels - AlertDog Docs"
 ---
 
 
-<Note>
-  Personal notifications can receive up to 30 messages per second. For higher limits, upgrade to VIP and set up a custom Bot
-</Note>
+<Warning>
+  Telegram notify to personal uses a shared bot, messages may be delayed during peak on-chain activity. If your business is critical, we recommend using [Notify to Telegram Custom Bot](/en/notification-channels/custom-telegram-bot)
+</Warning>
 
-## Operation Steps
+## Setup Steps
 
 <Steps>
 <Step title="Select Telegram as Notification Channel">
-  Select Telegram as the notification platform, customize the notification name
+  Open AlertDog **Add New Channel** -> 
+  Select **Telegram** as platform -> Notification name can keep default (or set to an identifiable name like "Jay's Telegram")
 
 <Frame caption="Select Telegram">
   <img
@@ -24,43 +25,43 @@ description: "Receive AlertDog monitoring alert messages via Telegram bot, insta
 
 </Step>
 
-<Step title='Click "Connect"'>
-  Click "Connect" and open Telegram as prompted
+<Step title="Connect and Bind">
+  Click the **Click Connect** button under **Notify to Personal**, Telegram dialog will automatically pop up
 
-  <Frame caption="Click Connect">
+  <Frame caption="Connect to Your Telegram">
   <img
     src="/images/notification-channels/telegram/telegram-click-connect.png"
-    alt="Click connect"
+    alt="Connect to your Telegram screenshot"
   />
 </Frame>
-  <Frame caption="Open Telegram">
+Pop-up window
+<Frame caption="Click Open Telegram Button">
   <img
     src="/images/notification-channels/telegram/telegram-open-app.png"
-    alt="Open Telegram"
+    alt="Telegram pop-up window screenshot"
   />
 </Frame>
-</Step>
 
-<Step title="Receive Notification from MCT Bot">
-  After opening Telegram, automatically receive notification from MCT Bot
+After opening Telegram, MCT Bot will automatically send you a message confirming channel creation
 
-<Frame caption="Receive Creation Message">
+<Frame caption="Channel Created Success Message Screenshot">
   <img
     src="/images/notification-channels/telegram/telegram-bot-message.png"
-    alt="Receive creation message"
+    alt="You will receive a message confirming notification channel creation"
   />
 </Frame>
 </Step>
 
-<Step title="Creation Success">
-  Return to AlertDog, the notification channel has been successfully added, your Telegram account will be shown in the notification channel list
+<Step title="Complete Binding">
+  Return to AlertDog, the notification channel has been successfully added, the notification channel list will display your Telegram account.
 
-<Frame caption="Creation Success">
+<Frame caption="Screenshot of List Page After Monitor Channel Creation">
   <img
     src="/images/notification-channels/telegram/telegram-channel-created.png"
-    alt="Creation success"
+    alt="Screenshot after monitor channel creation"
   />
 </Frame>
+<Check>Congratulations! You have successfully bound Telegram</Check>
 </Step>
 </Steps>
 
@@ -70,12 +71,11 @@ description: "Receive AlertDog monitoring alert messages via Telegram bot, insta
 
 <AccordionGroup>
 <Accordion title="How to unbind Telegram?">
-  Find the Telegram item in the notification channel list and click "Delete" to unbind.
+  Find the corresponding Telegram item in the notification channel list, click the three-dot icon and select "**Delete**" to unbind.
 </Accordion>
 
-<Accordion title="Can I bind multiple Telegram accounts?">
-  Yes. However, the same Telegram account can only be bound to one AlertDog account
+<Accordion title="Can one AlertDog account bind multiple Telegrams?">
+  Yes. But the same Telegram account can only bind one AlertDog account
 </Accordion>
 
 </AccordionGroup>
-

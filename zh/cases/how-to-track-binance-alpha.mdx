@@ -1,47 +1,43 @@
 ---
 title: "监控币安 alpha 上币项目"
 description: "监控 BSC 链币安 Alpha 空投钱包地址，提前知道币安 Alpha 要上哪个项目"
-"og:title": "通过链上监控币安alpha空投钱包提前知道上币情况 - 实战案例 - 监控狗文档"
+"og:title": "使用AlertDog通过链上监控币安alpha空投钱包提前知道上币情况 - 实战案例 - 监控狗文档"
 ---
 
+import SignInAndAddNotification from '/snippets/zh/sign-in-and-add-notification.mdx';
+import StepReceiveAlert from '/snippets/zh/step-receive-alert.mdx';
+
+<SignInAndAddNotification />
 
 操作步骤：
-
 <Steps>
-<Snippet file="zh/step-sign-in.mdx" />
 
-<Snippet file="zh/step-add-notification.mdx" />
+  <Step title="添加监控">
 
-<Step title="添加监控">
+  鼠标移入左侧列表，选择 **EVM监控** -> **[钱包监控](https://alertdog.io/evm/wallet)**
 
-鼠标移入左侧列表，选择 BTC 监控，选择"铭文监控"。
 
-<Frame caption="添加监控入口">
-  <img
-    src="/images/cases/inscription-monitor-entry.png"
-    alt="BTC 监控菜单，显示铭文监控选项"
-  />
-</Frame>
+  <Frame caption="添加监控入口">
+    <img
+      src="/images/cases/binance-alpha/add-wallet-monitor.png"
+      alt="监控狗 EVM 监控菜单，显示钱包监控选项"
+    />
+  </Frame>
 
-参考图例设置监控
+  钱包地址填入：0x73D8bD54F7Cf5FAb43fE4Ef40A62D390644946Db
+  其它选项参考图例设置
+  <Frame caption="监控配置">
+    <img
+      src="/images/cases/binance-alpha/wallet-monitor-config.png"
+    />
+  </Frame>
+  筛选条件设置：建议设置金额大于10万美元，可以有效过滤无用信息通知
+  <Frame caption="筛选条件需要设置美元价值大于10万">
+    <img
+      src="/images/cases/binance-alpha/filter-usd-value-settings.png"
+    />
+  </Frame>
+  </Step>
 
-<Frame caption="监控配置">
-  <img
-    src="/images/cases/binance-alpha-config.png"
-    alt="币安 Alpha 铭文监控配置页面"
-  />
-</Frame>
-<Tip>
-  您可以根据最近一段时间的符文铸造热度对设置条件进行调整，选择合适的条件进行组合设置。可以添加多个条件，当铭文同时满足所有条件时才发送通知。
-</Tip>
-</Step>
-
-<Frame caption="监控通知示例">
-  <img
-    src="/images/cases/inscription-notification.png"
-    alt="Telegram 中的监控通知消息示例"
-  />
-</Frame>
-
-<Snippet file="zh/step-receive-alert.mdx" />
+  <StepReceiveAlert />
 </Steps>

@@ -107,6 +107,7 @@
             "groups": [
               {
                 "group": "实战案例",
+                "icon": "list",
                 "pages": [
                   "zh/cases/how-to-monitor-cz-wallet",
                   "zh/cases/how-to-monitor-cz-twitter",
@@ -122,6 +123,7 @@
             "groups": [
               {
                 "group": "监控使用问题",
+                "icon": "alarm-clock",
                 "pages": [
                   "zh/faq/why-no-notifications",
                   "zh/faq/how-to-filter-spam-tokens"
@@ -129,7 +131,11 @@
               },
               {
                 "group": "其他问题",
-                "pages": ["zh/faq/what-is-vip-membership"]
+                "icon": "question",
+                "pages": [
+                  "zh/faq/what-is-vip-membership",
+                  "zh/faq/how-to-fix-429-error"
+                ]
               }
             ]
           }
@@ -252,7 +258,10 @@
               },
               {
                 "group": "User & Settings",
-                "pages": ["en/faq/what-is-vip-membership"]
+                "pages": [
+                  "en/faq/what-is-vip-membership",
+                  "en/faq/how-to-fix-429-error"
+                ]
               }
             ]
           }

@@ -1,57 +1,50 @@
 ---
 title: "通知到群组"
 description: "通过 Telegram 机器人接收 AlertDog 监控报警消息，即时推送，使用便捷"
-"og:title": "Telegram 通知到群组 - 监控狗文档"
+"og:title": "Telegram 通知到群组 - 通知渠道管理 - 监控狗文档"
 ---
 
 
 <Note>
-  通知到群组每分钟最多可接收 20 条消息，如需更高限制可升级 VIP 后设置自定义 Bot
+  通知到群组每分钟最多可接收 20 条消息，如需更高限制可选择 [通知到 Telegram 自定义 Bot](/zh/notification-channels/custom-telegram-bot)
 </Note>
-
 
 
 ## 操作步骤
 
 <Steps>
 
-<Step title="获取 Chat ID">
-  打开 Telegram，创建群组并邀请 MCT Bot
+<Step title="创建群组并获取 Chat ID">
+  打开 Telegram，创建一个新的群组（或Channel）
 
-  <Frame caption="创建群组">
+  <Frame caption="创建一个电报群组">
   <img
-    src="/images/notification-channels/telegram/Group 1948.png"
+    src="/images/notification-channels/telegram/telegram-create-group.png"
     alt="创建群组"
   />
 </Frame>
 
 搜索 MCT_CLUB_BOT 并将其添加到群组
 
-
-  <Frame >
+  <Frame caption="搜索 MCT_CLUB_BOT">
   <img
-    src="/images/notification-channels/telegram/Group 1949.png"
+    src="/images/notification-channels/telegram/telegram-search-mct-bot.png"
     alt="Telegram 搜索 MCT_CLUB_BOT"
   />
 </Frame>
 
- <Frame >
+ <Frame caption="将 MCT_CLUB_BOT 拉入群组">
   <img
-    src="/images/notification-channels/telegram/Group 1950.png"
+    src="/images/notification-channels/telegram/telegram-add-mct-bot.png"
     alt="Telegram 添加 MCT Bot 到群组"
   />
 </Frame>
+添加成功后，MCT Bot 将会自动在群组里发送 Chat ID，复制 Chat ID 备用
 
-
-</Step>
-
-<Step title="复制 Chat ID">
-添加成功后，MCT Bot 将会自动在群组里发送 Chat ID，复制 Chat ID
-
-  <Frame caption="复制 Chat ID">
+  <Frame caption="Telegram 群组的 Chat ID">
   <img
-    src="/images/notification-channels/telegram/Group 1951.png"
-    alt="复制 Chat ID"
+    src="/images/notification-channels/telegram/telegram-copy-chat-id.png"
+    alt="Telegram 群组的 Chat ID"
   />
 </Frame>
 
@@ -59,6 +52,7 @@ description: "通过 Telegram 机器人接收 AlertDog 监控报警消息，即�
 
 <Step title="创建通知渠道">
   打开 AlertDog 控制台，选择 Telegram，输入 ID 并点击连接
+  打开监控狗 **添加新渠道** -> **Telegram** -> **通知到群组** -> **输入上一步的 Chat ID** -> **连接** 确认即可
    <Frame caption="创建通知渠道">
   <img
     src="/images/notification-channels/telegram/telegram-group-notification.png"
@@ -67,15 +61,15 @@ description: "通过 Telegram 机器人接收 AlertDog 监控报警消息，即�
 </Frame>
 </Step>
 
-<Step title="创建完成">
-连接成功后，该通知渠道已添加成功，通知渠道列表中会显示该条通知渠道
-<Frame caption="创建完成">
+<Step title="Telegram 群组渠道创建完成">
+连接成功后表示渠道添加成功，通知渠道列表中会显示该条通知渠道
+<Frame caption="通知渠道创建完成">
   <img
     src="/images/notification-channels/telegram/telegram-group-created.png"
-    alt="创建完成"
+    alt="Telegram 群组渠道创建完成"
   />
 </Frame>
-
+<Check>你已成功完成 Telegram 电报通知到群组的设置</Check>
 </Step>
 
 </Steps>

@@ -77,7 +77,7 @@ mint build
 
 #### 1. 语言风格
 
-- 使用第二人称（"您"、"You"）
+- 使用第二人称（"你"、"You"）
 - 使用主动语态
 - 保持简洁明了
 - 避免不必要的术语
@@ -195,7 +195,7 @@ mint build
 
 <div align="center">
 
-**[AlertDog](https://alertdog.io)** - 您的 WEB3 链上监控专家
+**[AlertDog](https://alertdog.io)** - 你的 WEB3 链上监控专家
 
 Made with love by [MCT Team](https://mct.xyz)
 

@@ -1,10 +1,10 @@
 ---
 title: "Webhook"
 description: "通过自定义 Webhook 接收 AlertDog 监控报警消息，开发者友好的通知方式"
-"og:title": "Webhook 接口调用渠道 - 监控狗文档"
+"og:title": "Webhook 接口调用渠道 - 通知渠道管理 - 监控狗文档"
 ---
 
-简介：Webhook 是开发者友好的通知方式，支持将监控消息推送到您自定义的 HTTP 端点，实现与您的应用程序或工作流的深度集成。
+简介：Webhook 是开发者友好的通知方式，支持将监控消息推送到你自定义的 HTTP 端点，实现与你的应用程序或工作流的深度集成。
 
 
 
@@ -34,7 +34,7 @@ description: "通过自定义 Webhook 接收 AlertDog 监控报警消息，开�
 
 ## Webhook 消息格式
 
-AlertDog 会以 POST 方法向您的 Webhook URL 发送 JSON 格式的数据：
+AlertDog 会以 POST 方法向你的 Webhook URL 发送 JSON 格式的数据：
 
 ```json
 {
@@ -54,10 +54,10 @@ AlertDog 会以 POST 方法向您的 Webhook URL 发送 JSON 格式的数据：
 ## 安全配置
 
 <Warning>
-  建议启用签名验证，确保接收到的请求来自 AlertDog。您可以在URI配置时设置唯一字符。
+  建议启用签名验证，确保接收到的请求来自 AlertDog。你可以在URI配置时设置唯一字符。
 </Warning>
 
-使用说明：配置完成后，监控触发时 AlertDog 会向您的 Webhook URL 发送请求。您可以在自己的应用中处理这些请求，实现自定义的通知逻辑。
+使用说明：配置完成后，监控触发时 AlertDog 会向你的 Webhook URL 发送请求。你可以在自己的应用中处理这些请求，实现自定义的通知逻辑。
 
 # 常见问题
 
@@ -67,6 +67,6 @@ AlertDog 会以 POST 方法向您的 Webhook URL 发送 JSON 格式的数据：
 </Accordion>
 
 <Accordion title="Webhook 请求超时时间是多久？">
-  Webhook 请求超时时间为 5 秒。如果您的服务器响应时间过长，可能导致请求失败。
+  Webhook 请求超时时间为 5 秒。如果你的服务器响应时间过长，可能导致请求失败。
 </Accordion>
 </AccordionGroup>

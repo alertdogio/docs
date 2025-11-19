@@ -1,52 +1,51 @@
 ---
 title: "Custom Bot"
-description: "Receive AlertDog monitoring alert messages via Telegram bot, instant push, convenient to use"
-"og:title": "Custom Bot - AlertDog Docs"
+description: "Receive AlertDog monitoring alerts through Telegram bot, instant push, easy to use"
+"og:title": "Send Notifications to Telegram Custom Bot - Notification Channels - AlertDog Docs"
 ---
 
 
-{/* <Note>
-Custom Bot requires VIP upgrade to use
-</Note> */}
+<Note>
+Custom Bot requires Pro upgrade to use
+</Note> 
 
 
 
-## Operation Steps
+## Setup Steps
 
 <Steps>
 
-<Step title="Get Chat ID">
-  Open Telegram, create a group and invite MCT Bot
+<Step title="Create Group and Get Chat ID">
+  Open Telegram, create a new group (or Channel)
 
-  <Frame caption="Create Group">
+  <Frame caption="Create a Telegram Group">
   <img
     src="/images/notification-channels/telegram/telegram-create-group.png"
-    alt="Create group"
+    alt="Create Group"
   />
 </Frame>
 
 Search for MCT_CLUB_BOT and add it to the group
 
-
-  <Frame >
+  <Frame caption="Search MCT_CLUB_BOT">
   <img
     src="/images/notification-channels/telegram/telegram-search-mct-bot.png"
-    alt="Telegram search for MCT_CLUB_BOT"
+    alt="Telegram search MCT_CLUB_BOT"
   />
 </Frame>
 
- <Frame >
+ <Frame caption="Add MCT_CLUB_BOT to Group">
   <img
     src="/images/notification-channels/telegram/telegram-add-mct-bot.png"
-    alt="Telegram add MCT Bot to group"
+    alt="Add MCT Bot to Telegram group"
   />
 </Frame>
-After successful addition, MCT Bot will automatically send the Chat ID in the group, copy the Chat ID
+After successfully added, MCT Bot will automatically send the Chat ID in the group, copy the Chat ID for later use
 
-  <Frame caption="Copy Chat ID">
+  <Frame caption="Telegram Group Chat ID">
   <img
     src="/images/notification-channels/telegram/telegram-copy-chat-id.png"
-    alt="Copy Chat ID"
+    alt="Telegram group Chat ID"
   />
 </Frame>
 
@@ -54,32 +53,25 @@ After successful addition, MCT Bot will automatically send the Chat ID in the gr
 
 
 
-<Step title="Get Token">
-Visit https://t.me/BotFather on Telegram, click the menu button and select /newbot
+<Step title="Create Your Bot and Get API Token">
+Click [@BotFather](https://t.me/BotFather) link to automatically open Telegram and chat with BotFather, click **<Icon icon="list" />menu** and select **/newbot**
    <Frame caption="Create New Bot">
   <img
     src="/images/notification-channels/telegram/telegram-bot-father.png"
-    alt="Create newbot"
+    alt="Create new bot and give it a unique name"
   />
 </Frame>
 
-Customize a Bot name
-   <Frame caption="Customize Name">
-  <img
-    src="/images/notification-channels/telegram/telegram-newbot-command.png"
-    alt="Customize name"
-  />
-</Frame>
 
-Set a username for the Bot (username cannot be the same as others), and must end with 'bot'
-   <Frame caption="Set Username">
+Set an English username for the Bot (username cannot duplicate with others' bots), and must end with `bot`
+   <Frame caption="Screenshot of Setting Bot English Name">
   <img
     src="/images/notification-channels/telegram/telegram-set-bot-username.png"
-    alt="Set username"
+    alt="Set an unused English name for Bot"
   />
 </Frame>
 
-Get API Token, after setting the username, copy the API
+After correctly setting the username, you will get the API Token, copy it for the next step
    <Frame caption="Copy API">
   <img
     src="/images/notification-channels/telegram/telegram-copy-api-token.png"
@@ -89,31 +81,33 @@ Get API Token, after setting the username, copy the API
 
 </Step>
 
-<Step title="Invite Custom Bot to Group">
-Invite the custom Telegram Bot to the group with @MCT_CLUB_BOT
-<Frame >
+<Step title="Invite Custom Bot to Join Group">
+Add the custom Telegram Bot created in the previous step to the group with @MCT_CLUB_BOT created in the first step
+<Frame caption="Click +ADD to Add Group Member">
   <img
     src="/images/notification-channels/telegram/telegram-invite-custom-bot.png"
-    alt="Telegram search and invite custom Bot to group"
+    alt="Telegram add new member to group"
   />
 </Frame>
-<Frame >
+
+Enter your custom Bot name
+<Frame caption="Search and Invite Custom Bot to Group">
   <img
     src="/images/notification-channels/telegram/telegram-custom-bot-added.png"
-    alt="Telegram custom Bot successfully added to group"
+    alt="Search and invite custom Bot to group"
   />
 </Frame>
 </Step>
 
-<Step title="Create Notification Channel">
-Open AlertDog, select Telegram, select custom Bot, enter Chat ID and API respectively, confirm
+<Step title="Create Custom Bot Notification Channel">
+Open AlertDog **Add New Channel** -> **Telegram** -> **Notify to Group** -> **Custom BOT**, enter the Chat ID and API Token from the previous two steps -> **Connect** to confirm
 <Frame >
   <img
     src="/images/notification-channels/telegram/telegram-custom-bot-created.png"
     alt="Create custom Telegram Bot notification channel in AlertDog"
   />
 </Frame>
-
+<Check>Wow! You've mastered such a challenging operation, impressive! You have successfully completed the Telegram custom bot binding</Check>
 </Step>
 
 
@@ -124,16 +118,15 @@ Open AlertDog, select Telegram, select custom Bot, enter Chat ID and API respect
 ## FAQ
 
 <AccordionGroup>
-<Accordion title="Cannot set custom Bot?">
-  Custom Bot requires VIP upgrade to use: https://alertdog.io/pricing?utm_source=docs_en
+<Accordion title="Unable to set up custom Bot?">
+  Custom Bot requires VIP upgrade to use: https://alertdog.io/price
 </Accordion>
 
 <Accordion title="Custom Bot username setup unsuccessful">
-  When setting the username, note that it must meet both of the following: 1. Username cannot be the same as others; 2. Must end with 'bot', and do not use numbers
+  Username setup must satisfy both of the following: 1. Username cannot be the same as others; 2. Must end with 'bot' and avoid using numbers
 </Accordion>
 
 <Accordion title="Can I create and bind multiple custom Bots?">
   Yes.
 </Accordion>
 </AccordionGroup>
-

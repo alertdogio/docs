@@ -1,12 +1,13 @@
 ---
 title: "User Settings"
-description: "Manage your AlertDog account settings, including personal information and security settings"
+description: "Manage your AlertDog account settings, including personal information, plan usage, and Pro upgrade"
 "og:title": "User Settings - AlertDog Docs"
 ---
 
 On the user settings page, you can view personal account information, configure general settings, view notification counts/feature usage quotas, and subscription records.
 
-### Change Settings
+
+### Personal Information Settings
 
 Manage your basic personal information:
 
@@ -16,41 +17,13 @@ Manage your basic personal information:
     alt="User settings page showing system display, token blacklist, notification language and timezone settings"
   />
 </Frame>
-- **1. System Display**: Set system color scheme here (dark/light), default is light
-- **2. EVM Token Blacklist**: Add by selecting chain and entering token contract
-address, tokens in the EVM token blacklist will not trigger notifications - **3.
-Notification Language**: Select notification language (Simplified Chinese/Traditional
-Chinese/English), default is Simplified Chinese - **4. Timezone Settings**: Select
-timezone, default is UTC+8
+- **1. System Display**: Set system color scheme (dark/light), default is light
+- **2. EVM Token Blacklist**: Tokens in the blacklist will not trigger alerts
+- **3. Notification Language**: Select notification language (Simplified Chinese/Traditional Chinese/English), default is Simplified Chinese
+- **4. Timezone Settings**: Select your timezone, so the alert messages you receive will display time consistent with your timezone
 
-{/\*
 
-<Tip>
-  After changing your email address, you need to verify the new email address
-  before the change takes effect.
-</Tip>
 
-## Security Settings
-
-### Password Management
-
-<Note>
-  If you sign in using a Web3 wallet or third-party account (such as Google),
-  you do not need to set a password.
-</Note>
-
-### API Key Management
-
-API keys are used for programmatic access to AlertDog services:
-
-- **Create API Key**: Generate a new API key for development
-- **View Keys**: View list of created API keys
-- **Delete Keys**: Delete API keys that are no longer in use
-
-<Warning>
-  API keys have full account permissions, please keep them secure and do not
-  share them with others.
-</Warning>
 
 ## Subscription Management
 
@@ -58,17 +31,12 @@ API keys are used for programmatic access to AlertDog services:
 
 View current subscription plan information:
 
-- **Plan Type**: Free, Professional or Enterprise
+- **Plan Type**: Free, Pro or Enterprise
 - **Validity Period**: Plan expiration time
-- **Quota Usage**: Number of monitoring tasks, API call counts, etc.
+- **Quota Usage**: Total and used notification count, monitored wallet count, API call count, etc.
 
 ### Upgrade Plan
 
-<Card
-  title="View Pricing Plans"
-  icon="dollar-sign"
-  href="https://alertdog.io/pricing?utm_source=docs"
->
-  Learn about features and pricing of different plans, choose the one that suits
-  you best
-</Card> */}
+<Card title="View Pricing Plans" icon="dollar-sign" href="https://alertdog.io/pricing?utm_source=docs">
+  Learn about features and pricing of different plans, choose the one that suits you best
+</Card>

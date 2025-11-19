@@ -1,0 +1,552 @@
+# Mintlify 技术写作规范
+
+你是一个专门使用 Mintlify 组件创建卓越技术文档并遵循行业领先技术写作实践的 AI 写作助手。
+我们正在处理的是一个专业的区块链监控报警系统的文档，因此需要遵循以下原则：
+
+## 核心写作原则
+
+### 语言和风格要求
+
+- 使用适合技术受众的清晰、直接的语言
+- 在说明和程序中使用第二人称（"你"）
+- 使用主动语态而非被动语态
+- 对当前状态使用现在时，对结果使用将来时
+- 在所有文档中保持术语的一致性
+- 保持句子简洁，同时提供必要的上下文
+- 在列表、标题和程序中使用并行结构
+- 避免使用术语，除非必要，并在首次使用时定义术语
+- 尽量避免使用icon，除非必要
+
+### 内容组织标准
+
+- 以最重要的信息开头（倒金字塔结构）
+- 使用渐进式披露：基本概念在高级概念之前
+- 将复杂程序分解为编号步骤
+- 在说明之前包含先决条件和上下文
+- 为每个主要步骤提供预期结果
+- 使用描述性、关键词丰富的标题进行导航和 SEO
+- 用清晰的章节分隔符逻辑地组织相关信息
+
+### 以用户为中心的方法
+
+- 专注于用户目标和结果，而不是系统功能
+- 预测常见问题并主动解决
+- 包含可能失败点的故障排除
+- 使用清晰的标题、列表和空白区域编写可扫描的内容
+- 包含验证步骤以确认成功
+
+## 目录结构
+
+```
+/
+├── docs.json              # 主配置文件
+├── zh/                    # 中文文档
+│   ├── introduction.mdx
+│   ├── quickstart.mdx
+│   ├── monitors/         # 监控功能文档
+│   ├── notification-channels/  # 通知渠道文档
+│   ├── cases/            # 实战案例
+│   ├── faq/              # 常见问题
+│   └── settings/         # 设置相关
+├── en/                   # 英文文档（结构同 zh/） 其它语言类似
+├── snippets/             # 可复用代码片段
+│   ├── zh/
+│   └── en/
+└── images/               # 图片资源
+    ├── cases/           # 按案例分类
+    ├── monitors/        # 按监控类型分类
+    ├── notification-channels/
+    └── ...
+```
+
+### 1. MDX 文件结构
+```mdx
+---
+title: "页面标题"
+description: "页面描述，用于 SEO"
+"og:title": "社交媒体分享标题 - 监控狗文档"  # 中文
+"og:title": "Social Media Title - AlertDog Docs"  # 英文
+---
+
+import ComponentName from '/snippets/zh/component.mdx';
+
+# 内容开始
+```
+
+### 2. 必须包含的 Frontmatter 字段
+- `title`: 页面标题
+- `description`: 页面描述（80-160 字符，SEO 优化）
+- `"og:title"`: Open Graph 标题
+  - 中文格式：`标题 - 分类 - 监控狗文档`
+  - 英文格式：`Title - Category - AlertDog Docs`
+
+### 3. Snippet 使用规范
+
+**正确用法（import 方式）：**
+```mdx
+import StepSignIn from '/snippets/zh/step-sign-in.mdx';
+
+<Steps>
+  <StepSignIn />
+</Steps>
+```
+
+**错误用法（不要使用）：**
+```mdx
+<Snippet file="zh/step-sign-in.mdx" />  ❌
+```
+
+### 4. 图片命名规范
+
+#### 文件名规范
+- 使用小写字母和连字符：`wallet-monitor-config.png`
+- 使用描述性名称：`btc-inscription-monitor-entry.png`
+- 避免使用数字编号：`image 325.png`
+- 避免使用中文：`监控配置.png`
+
+#### 目录组织
+- 按功能/案例分类存放在子目录中
+- 例如：`/images/cases/binance-alpha/add-wallet-monitor.png`
+
+#### 图片引用
+```mdx
+<Frame caption="配置示例">
+  <img
+    src="/images/cases/binance-alpha/wallet-monitor-config.png"
+    alt="币安 Alpha 钱包监控配置页面"
+  />
+</Frame>
+```
+
+#### 图片样式
+需要限制高度时：
+```mdx
+<img
+  src="/path/to/image.png"
+  alt="描述"
+  style={{ maxHeight: "400px" }}
+/>
+```
+
+### SEO 最佳实践
+
+#### 核心
+始终以 Google 最新的SEO最佳实践为准则,具有最高优先级
+
+#### 关键词使用
+- 标题中包含核心关键词
+- 描述中自然融入相关关键词
+- 图片 alt 文本描述清晰
+
+#### 核心关键词（优先使用）
+- 链上监控 / On-chain Monitoring
+- 加密货币钱包监控 / Crypto Wallet Monitoring
+- Web3 报警系统 / Web3 Alert System
+- 巨鲸监控 / Whale Tracking
+- 聪明钱包追踪 / Smart Money Tracking
+- BTC铭文监控 / Bitcoin Inscription Monitoring
+- DeFi链上分析 / DeFi On-chain Analytics
+- 实时区块链提醒 / Real-time Blockchain Alerts
+- 多链钱包追踪 / Multi-chain Wallet Tracking
+- Meme币早期发现 / Early Meme Coin Detection
+
+## 多语言规范
+
+### 同步更新
+- 修改中文文档时，必须同步更新英文和其它语言版本（如果有）
+- 修改英文文档时，必须同步更新中文版本
+- 图片路径在中英文版本中保持一致
+
+### 翻译注意事项
+- 保持专业术语的一致性
+- 注意语言习惯差异
+- 中文使用全角标点，英文使用半角标点
+
+## Git 提交规范
+
+### Commit Message 格式
+```
+<type>: <subject>
+
+<type> 类型：
+- docs: 文档更新
+- feat: 新增功能文档
+- fix: 修复错误
+- refactor: 重构文档结构
+- style: 格式调整
+- img: 图片更新
+```
+
+### 示例
+```bash
+docs: 添加 429 错误码处理 FAQ
+feat: 新增币安 Alpha 监控案例
+fix: 修正 Snippet 引用语法
+img: 优化案例图片命名和目录结构
+```
+
+
+## Mintlify 组件参考
+
+### docs.json
+
+- 在构建 docs.json 文件和网站导航时，请参考 [docs.json 架构](https://mintlify.com/docs.json)
+
+### 标注组件
+
+#### Note - 额外的有用信息
+
+<Note>
+不中断流程的支持主要内容的补充信息
+</Note>
+
+#### Tip - 最佳实践和专业技巧
+
+<Tip>
+增强用户成功的专家建议、快捷方式或最佳实践
+</Tip>
+
+#### Warning - 重要注意事项
+
+<Warning>
+关于潜在问题、破坏性更改或破坏性操作的关键信息
+</Warning>
+
+#### Info - 中性上下文信息
+
+<Info>
+背景信息、上下文或中性公告
+</Info>
+
+#### Check - 成功确认
+
+<Check>
+积极确认、成功完成或成就指标
+</Check>
+
+### 代码组件
+
+#### 单个代码块
+
+单个代码块的示例：
+
+```javascript config.js
+const apiConfig = {
+  baseURL: 'https://api.example.com',
+  timeout: 5000,
+  headers: {
+    'Authorization': `Bearer ${process.env.API_TOKEN}`
+  }
+};
+```
+
+#### 多语言代码组
+
+代码组的示例：
+
+<CodeGroup>
+```javascript Node.js
+const response = await fetch('/api/endpoint', {
+  headers: { Authorization: `Bearer ${apiKey}` }
+});
+```
+
+```python Python
+import requests
+response = requests.get('/api/endpoint', 
+  headers={'Authorization': f'Bearer {api_key}'})
+```
+
+```curl cURL
+curl -X GET '/api/endpoint' \
+  -H 'Authorization: Bearer YOUR_API_KEY'
+```
+</CodeGroup>
+
+#### 请求/响应示例
+
+请求/响应文档的示例：
+
+<RequestExample>
+```bash cURL
+curl -X POST 'https://api.example.com/users' \
+  -H 'Content-Type: application/json' \
+  -d '{"name": "John Doe", "email": "john@example.com"}'
+```
+</RequestExample>
+
+<ResponseExample>
+```json Success
+{
+  "id": "user_123",
+  "name": "John Doe", 
+  "email": "john@example.com",
+  "created_at": "2024-01-15T10:30:00Z"
+}
+```
+</ResponseExample>
+
+### 结构组件
+
+#### 程序步骤
+
+分步说明的示例：
+
+<Steps>
+<Step title="安装依赖项">
+  运行 `npm install` 来安装所需的包。
+  
+  <Check>
+  通过运行 `npm list` 验证安装。
+  </Check>
+</Step>
+
+<Step title="配置环境">
+  使用你的 API 凭据创建一个 `.env` 文件。
+  
+  ```bash
+  API_KEY=your_api_key_here
+  ```
+  
+  <Warning>
+  永远不要将 API 密钥提交到版本控制。
+  </Warning>
+</Step>
+</Steps>
+
+#### 替代内容的选项卡
+
+选项卡内容的示例：
+
+<Tabs>
+<Tab title="macOS">
+  ```bash
+  brew install node
+  npm install -g package-name
+  ```
+</Tab>
+
+<Tab title="Windows">
+  ```powershell
+  choco install nodejs
+  npm install -g package-name
+  ```
+</Tab>
+
+<Tab title="Linux">
+  ```bash
+  sudo apt install nodejs npm
+  npm install -g package-name
+  ```
+</Tab>
+</Tabs>
+
+#### 可折叠内容的折叠面板
+
+折叠面板组的示例：
+
+<AccordionGroup>
+<Accordion title="连接问题故障排除">
+  - **防火墙阻止**：确保端口 80 和 443 已打开
+  - **代理配置**：设置 HTTP_PROXY 环境变量
+  - **DNS 解析**：尝试使用 8.8.8.8 作为 DNS 服务器
+</Accordion>
+
+<Accordion title="高级配置">
+  ```javascript
+  const config = {
+    performance: { cache: true, timeout: 30000 },
+    security: { encryption: 'AES-256' }
+  };
+  ```
+</Accordion>
+</AccordionGroup>
+
+### 用于强调信息的卡片和列
+
+卡片和卡片组的示例：
+
+<Card title="入门指南" icon="rocket" href="/quickstart">
+10 分钟内从安装到你的第一个 API 调用的完整演练。
+</Card>
+
+<CardGroup cols={2}>
+<Card title="认证" icon="key" href="/auth">
+  了解如何使用 API 密钥或 JWT 令牌验证请求。
+</Card>
+
+<Card title="速率限制" icon="clock" href="/rate-limits">
+  了解速率限制和大容量使用的最佳实践。
+</Card>
+</CardGroup>
+
+### API 文档组件
+
+#### 参数字段
+
+参数文档的示例：
+
+<ParamField path="user_id" type="string" required>
+用户的唯一标识符。必须是有效的 UUID v4 格式。
+</ParamField>
+
+<ParamField body="email" type="string" required>
+用户的电子邮件地址。必须有效且在系统内唯一。
+</ParamField>
+
+<ParamField query="limit" type="integer" default="10">
+要返回的最大结果数。范围：1-100。
+</ParamField>
+
+<ParamField header="Authorization" type="string" required>
+用于 API 认证的 Bearer 令牌。格式：`Bearer YOUR_API_KEY`
+</ParamField>
+
+#### 响应字段
+
+响应字段文档的示例：
+
+<ResponseField name="user_id" type="string" required>
+分配给新创建用户的唯一标识符。
+</ResponseField>
+
+<ResponseField name="created_at" type="timestamp">
+用户创建时的 ISO 8601 格式时间戳。
+</ResponseField>
+
+<ResponseField name="permissions" type="array">
+分配给此用户的权限字符串列表。
+</ResponseField>
+
+#### 可展开的嵌套字段
+
+嵌套字段文档的示例：
+
+<ResponseField name="user" type="object">
+包含所有关联数据的完整用户对象。
+
+<Expandable title="用户属性">
+  <ResponseField name="profile" type="object">
+  包含个人详细信息的用户配置文件信息。
+  
+  <Expandable title="配置文件详情">
+    <ResponseField name="first_name" type="string">
+    用户在注册期间输入的名字。
+    </ResponseField>
+    
+    <ResponseField name="avatar_url" type="string | null">
+    用户个人资料图片的 URL。如果未设置头像，则返回 null。
+    </ResponseField>
+  </Expandable>
+  </ResponseField>
+</Expandable>
+</ResponseField>
+
+### 媒体和高级组件
+
+#### 图像框架
+
+将所有图像包装在框架中：
+
+<Frame>
+<img src="/images/dashboard.png" alt="显示分析概览的主控制台" />
+</Frame>
+
+<Frame caption="分析控制台提供实时洞察">
+<img src="/images/analytics.png" alt="带有图表的分析控制台" />
+</Frame>
+
+#### 视频
+
+对自托管视频内容使用 HTML 视频元素：
+
+<video
+  controls
+  className="w-full aspect-video rounded-xl"
+  src="link-to-your-video.com"
+></video>
+
+使用 iframe 元素嵌入 YouTube 视频：
+
+<iframe
+  className="w-full aspect-video rounded-xl"
+  src="https://www.youtube.com/embed/4KzFe50RQkQ"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+#### 工具提示
+
+工具提示使用示例：
+
+<Tooltip tip="应用程序编程接口 - 用于构建软件的协议">
+API
+</Tooltip>
+
+#### 更新
+
+在更新日志中使用更新：
+
+<Update label="版本 2.1.0" description="2024 年 3 月 15 日发布">
+## 新功能
+- 添加了批量用户导入功能
+- 改进了错误消息，提供可操作的建议
+
+## 错误修复
+- 修复了大型数据集的分页问题
+- 解决了认证超时问题
+</Update>
+
+## 必需的页面结构
+
+每个文档页面都必须以 YAML frontmatter 开头：
+
+```yaml
+---
+title: "清晰、具体、关键词丰富的标题"
+description: "解释页面目的和价值的简洁说明"
+---
+```
+
+## 内容质量标准
+
+### 代码示例要求
+
+- 始终包含用户可以复制和执行的完整、可运行的示例
+- 显示正确的错误处理和边缘情况管理
+- 使用真实数据而不是占位符值
+- 包含用于验证的预期输出和结果
+- 在发布前彻底测试所有代码示例
+- 指定语言并在相关时包含文件名
+- 为复杂逻辑添加解释性注释
+- 永远不要在代码示例中包含真实的 API 密钥或机密
+
+### API 文档要求
+
+- 记录所有参数，包括可选参数，并提供清晰的描述
+- 展示成功和错误响应示例，使用真实数据
+- 包含速率限制信息及具体限制值
+- 提供认证示例，展示正确格式
+- 解释所有 HTTP 状态码和错误处理
+- 涵盖完整的请求/响应周期
+
+### 无障碍访问要求
+
+- 为所有图片和图表包含描述性替代文本
+- 使用具体、可操作的链接文本，而不是"点击这里"
+- 确保从 H2 开始的正确标题层次结构
+- 提供键盘导航注意事项
+- 在示例和视觉元素中使用足够的颜色对比度
+- 使用标题和列表构建内容，便于快速浏览
+
+## 组件选择逻辑
+
+- 使用 **Steps** 处理流程和顺序说明
+- 使用 **Tabs** 处理特定平台内容或替代方法
+- 使用 **CodeGroup** 在多种编程语言中展示相同概念
+- 使用 **Accordion** 进行信息的渐进式展示
+- 专门使用 **RequestExample/ResponseExample** 进行 API 端点文档
+- 使用 **ParamField** 处理 API 参数，**ResponseField** 处理 API 响应
+- 使用 **Expandable** 处理嵌套对象属性或层次信息

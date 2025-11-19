@@ -1,15 +1,16 @@
 ---
 title: "How to Monitor CZ's Wallet"
 description: "Step-by-step guide to monitoring CZ's (Changpeng Zhao) wallet address, track Binance founder's on-chain transaction activities in real-time. Set up EVM address monitoring through AlertDog to be the first to know about wallet transfers, trades, and other operations."
-"og:title": "How to Monitor CZ's Wallet - AlertDog Docs"
+"og:title": "Monitor CZ Wallet Address with AlertDog - Case Study - AlertDog Docs"
 ---
 
+import SignInAndAddNotification from '/snippets/en/sign-in-and-add-notification.mdx';
+import StepReceiveAlert from '/snippets/en/step-receive-alert.mdx';
+
+<SignInAndAddNotification />
+
 Operation steps:
-
 <Steps>
-<Snippet file="en/step-sign-in.mdx" />
-
-<Snippet file="en/step-add-notification.mdx" />
 
 <Step title="Add Monitor">
 
@@ -25,7 +26,7 @@ Hover over the left sidebar, select **EVM Monitoring** → **Address Monitoring*
 CZ wallet address: `0x28816c4C4792467390C90e5B426F198570E29307`, fill in the monitoring form according to your needs as shown in the example.
 <Frame caption="Address Monitoring Form Configuration">
   <img
-    src="/images/cases/cz-wallet-address.png"
+    src="/images/cases/cz-wallet/cz-wallet-address-config.png"
     alt="Address monitoring form containing address, chain selection, monitoring type and other fields"
   />
 </Frame>
@@ -40,6 +41,6 @@ CZ wallet address: `0x28816c4C4792467390C90e5B426F198570E29307`, fill in the mon
   />
 </Frame> */}
 
-<Snippet file="en/step-receive-alert.mdx" />
+<StepReceiveAlert />
 </Steps>
 

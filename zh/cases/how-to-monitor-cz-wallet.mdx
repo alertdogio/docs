@@ -1,15 +1,16 @@
 ---
 title: "如何监控CZ的钱包"
 description: "手把手教你监控 CZ（赵长鹏）的钱包地址，实时追踪币安创始人的链上交易动向。通过 AlertDog 设置 EVM 地址监控，第一时间知悉钱包的代币转账、买卖等操作。"
-"og:title": "监控CZ（赵长鹏）的钱包地址 - 实战案例 - 监控狗文档"
+"og:title": "使用AlertDog监控CZ（赵长鹏）的钱包地址 - 实战案例 - 监控狗文档"
 ---
 
+import SignInAndAddNotification from '/snippets/zh/sign-in-and-add-notification.mdx';
+import StepReceiveAlert from '/snippets/zh/step-receive-alert.mdx';
+
+<SignInAndAddNotification />
+
 操作步骤：
-
 <Steps>
-<Snippet file="zh/step-sign-in.mdx" />
-
-<Snippet file="zh/step-add-notification.mdx" />
 
 <Step title="添加监控">
 
@@ -22,23 +23,15 @@ description: "手把手教你监控 CZ（赵长鹏）的钱包地址，实时追
   />
 </Frame>
 
-CZ 钱包地址：`0x28816c4C4792467390C90e5B426F198570E29307`，参考图例按您的需求填写监控表单。
+CZ 钱包地址：`0x28816c4C4792467390C90e5B426F198570E29307`，参考图例按你的需求填写监控表单。
 <Frame caption="地址监控表单配置">
   <img
-    src="/images/cases/cz-wallet-address.png"
+    src="/images/cases/cz-wallet/cz-wallet-address-config.png"
     alt="地址监控表单，包含地址、链选择、监控类型等字段"
   />
 </Frame>
 
 </Step>
 
-{/* 
-<Frame caption="监控通知示例">
-  <img
-    src="/images/quickstart/notification-telegram.png"
-    alt="Telegram 中的监控通知消息示例"
-  />
-</Frame> */}
-
-<Snippet file="zh/step-receive-alert.mdx" />
+<StepReceiveAlert />
 </Steps>

@@ -1,12 +1,12 @@
 ---
-title: "GAS消耗监控"
+title: "GAS异常监控"
 description: "实时追踪各链GAS费用与消耗情况，识别高消耗地址与燃烧榜前列钱包，助你洞察链上活跃度与潜在热点。"
-"og:title": "GAS消耗监控 - 监控狗文档"
+"og:title": "区块链实时GAS和异常消耗监控 - 监控狗文档"
 ---
 
 
-## 添加 GAS 实时消耗监控
-监控通知各链实时 GAS 消耗，实时了解波动趋势抢占操作先机
+## GAS 实时值监控
+监控通知各链实时 GAS ，如果大于或者小于指定的值即触发报警。
 <Frame caption="GAS 实时消耗监控">
   <img
     src="/images/monitors/gas-alert/gas-alert-entry.png"
@@ -15,15 +15,15 @@ description: "实时追踪各链GAS费用与消耗情况，识别高消耗地址
 </Frame>
 
 
-## 添加 GAS 消耗异常监控
+## GAS 消耗异常监控
 
-在最近时间段内 GAS 消耗到达指定值的地址，及时发现链上异常活动，提前洞察潜在机会或风险
+用于提醒时间段内消耗 GAS 到达指定值的合约地址，及时发现链上热点项目
 
 
-<Frame caption="符文铸造监控配置">
+<Frame caption="GAS 消耗异常监控配置">
   <img
     src="/images/monitors/gas-alert/gas-alert-config.png"
-    alt="符文铸造监控配置界面"
+    alt="GAS 消耗异常监控界面"
   />
 </Frame>
 
@@ -31,9 +31,9 @@ description: "实时追踪各链GAS费用与消耗情况，识别高消耗地址
 
 
 
-## 添加 GAS 燃烧 TOP 5 监控
+## GAS 燃烧 TOP 排行榜监控
 
-监控最近时间段内 GAS 燃烧最多的5个地址，及时了解资金和用户流向，追踪链上热点
+监控最近时间段内 GAS 燃烧最多的5个地址, 可设置发送通知的间隔时间
 
 <Frame caption="GAS 燃烧 TOP 5 监控配置">
   <img
@@ -49,7 +49,7 @@ description: "实时追踪各链GAS费用与消耗情况，识别高消耗地址
 
 ## 管理GAS监控
 
-您可以通过以下方式管理已添加的GAS监控：
+你可以通过以下方式管理已添加的GAS监控：
 
 - **筛选监控**：可以根据监控类型筛选指定的监控
 - **批量操作**：点击批量操作，可以对选中的监控进行批量移动组、批量编辑、批量修改通知方式、批量删除的操作

@@ -1,48 +1,47 @@
 ---
 title: "热门铭文铸造监控"
 description: "第一时间提醒你被大量铸造的热门铭文，帮助你抢在热度爆发前以极低矿工费铸造，提前占位潜力铭文。"
-"og:title": "BTC热门铭文铸造监控报警 - 实战案例 - 监控狗文档"
+"og:title": "使用AlertDog进行BTC热门铭文铸造监控报警 - 实战案例 - 监控狗文档"
 ---
 
+import SignInAndAddNotification from '/snippets/zh/sign-in-and-add-notification.mdx';
+
+
+<SignInAndAddNotification />
 
 操作步骤：
-
 <Steps>
-<Snippet file="zh/step-sign-in.mdx" />
 
-<Snippet file="zh/step-add-notification.mdx" />
+  <Step title="添加监控">
 
-<Step title="添加监控">
-
-鼠标移入左侧列表，选择 BTC监控 ，选择"铭文监控"。
+  鼠标移入左侧列表，选择 **BTC监控** -> **铭文监控**
 
 
-<Frame caption="添加监控入口">
-  <img
-    src="/images/cases/inscription-monitor-entry.png"
-    alt="EVM 监控菜单，显示地址监控选项"
-  />
-</Frame>
+  <Frame caption="添加监控入口">
+    <img
+      src="/images/cases/hot-inscriptions/btc-inscription-monitor-entry.png"
+      alt="EVM 监控菜单，显示地址监控选项"
+    />
+  </Frame>
 
-参考图例设置监控
+  参考图例设置监控
 
-<Frame caption="监控配置">
-  <img
-    src="/images/cases/binance-alpha-config.png"
-    alt="BTC 铭文监控配置表单，包含铸造次数、Gas 阈值等条件设置"
-  />
-</Frame>
-<Tip>
-  您可以根据最近一段时间的符文铸造热度对设置条件进行调整，选择合适的条件进行组合设置。可以添加多个条件，当铭文同时满足所有条件时才发送通知。
-</Tip>
-</Step>
-
-<Frame caption="监控通知示例">
-  <img
-    src="/images/cases/inscription-notification.png"
-    alt="Telegram 中的监控通知消息示例"
-  />
-</Frame>
-
-<Snippet file="zh/step-receive-alert.mdx" />
+  <Frame caption="监控配置">
+    <img
+      src="/images/cases/hot-inscriptions/inscription-monitor-config.png"
+      alt="BTC 铭文监控配置表单，包含铸造次数、Gas 阈值等条件设置"
+    />
+  </Frame>
+  <Tip>
+    你可以根据最近一段时间的符文铸造热度对设置条件进行调整，选择合适的条件进行组合设置。可以添加多个条件，当铭文同时满足所有条件时才发送通知。
+  </Tip>
+  </Step>
+  <Step title="接收通知">
+  <Frame caption="热门铭文监控通知示例">
+    <img
+      src="/images/cases/hot-inscriptions/inscription-notification-example.png"
+      alt="Telegram 接收到热门铭文监控通知的消息示例"
+    />
+  </Frame>
+  </Step>
 </Steps>
