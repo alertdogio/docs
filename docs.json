@@ -305,11 +305,10 @@
       "author": "alertdogio",
       "robots": "index, follow",
       "googlebot": "index, follow",
-      "og:image": "https://res.mct.club/twitter-poster-alertdog.png",
-      "og:title": "AlertDog Docs",
+      "twitter:card": "summary",
+      "twitter:creator": "@alertdogio",
       "og:type": "website",
-      "og:url": "https://docs.alertdog.io",
-      "og:description": "新一代 Web3 链上监控报警系统: 实时追踪、智能提醒、多链支持。为加密投资者和开发者而生"
+      "og:url": "https://docs.alertdog.io"
     }
   },
   "integrations": {
