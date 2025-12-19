@@ -60,9 +60,16 @@
                       "zh/monitors/sui-chain/token-price-monitoring"
                     ]
                   },
+                   {
+                    "group": "hyperliquid监控",
+                    "pages": [
+                      "zh/monitors/hyperliquid/whale-alert",
+                      "zh/monitors/hyperliquid/wallet"
+                    ]
+                  },
                   "zh/monitors/gas-alert",
                   "zh/monitors/whale-alert",
-                  "zh/monitors/hyperliquid",
+                
                   "zh/monitors/twitter-alert"
                 ]
               },
@@ -93,7 +100,9 @@
               {
                 "group": "用户 & 设置",
                 "icon": "gear",
-                "pages": ["zh/settings/sign-in", "zh/settings/user-settings"]
+                "pages": ["zh/settings/sign-in", 
+                  "zh/settings/user-settings", 
+                  "zh/settings/mywallet"]
               },
               {
                 "group": "更新日志",
