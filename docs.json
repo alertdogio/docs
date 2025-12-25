@@ -135,7 +135,8 @@
                 "icon": "alarm-clock",
                 "pages": [
                   "zh/faq/why-no-notifications",
-                  "zh/faq/how-to-filter-spam-tokens"
+                  "zh/faq/how-to-filter-spam-tokens",
+                  "zh/faq/monitoring-filter-conditions-not-fully-applied"
                 ]
               },
               {
