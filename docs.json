@@ -102,7 +102,9 @@
                 "icon": "gear",
                 "pages": ["zh/settings/sign-in", 
                   "zh/settings/user-settings", 
-                  "zh/settings/mywallet"]
+                  "zh/settings/mywallet", 
+                  "zh/settings/copy-trading"]
+                
               },
               {
                 "group": "更新日志",
