@@ -64,7 +64,8 @@
                     "group": "hyperliquid监控",
                     "pages": [
                       "zh/monitors/hyperliquid/whale-alert",
-                      "zh/monitors/hyperliquid/wallet"
+                      "zh/monitors/hyperliquid/wallet",
+                      "zh/monitors/hyperliquid/volatility"
                     ]
                   },
                   "zh/monitors/gas-alert",
