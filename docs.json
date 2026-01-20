@@ -103,10 +103,10 @@
                 "icon": "gear",
                 "pages": ["zh/settings/sign-in", 
                   "zh/settings/user-settings", 
-                  "zh/settings/mywallet", 
-                  "zh/settings/copy-trading"
+                  "zh/settings/mywallet",
+                  "zh/settings/copy-trading",
+                  "zh/settings/price-auto-entry"
                 ]
-                
               },
               {
                 "group": "更新日志",
