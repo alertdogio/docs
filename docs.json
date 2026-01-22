@@ -21,7 +21,10 @@
               {
                 "group": "开始使用",
                 "icon": "rocket",
-                "pages": ["zh/introduction", "zh/quickstart"]
+                "pages": [
+                  "zh/introduction",
+                  "zh/quickstart"
+                ]
               },
               {
                 "group": "链上监控",
@@ -60,7 +63,7 @@
                       "zh/monitors/sui-chain/token-price-monitoring"
                     ]
                   },
-                   {
+                  {
                     "group": "hyperliquid监控",
                     "pages": [
                       "zh/monitors/hyperliquid/whale-alert",
@@ -70,7 +73,6 @@
                   },
                   "zh/monitors/gas-alert",
                   "zh/monitors/whale-alert",
-                
                   "zh/monitors/twitter-alert"
                 ]
               },
@@ -81,7 +83,6 @@
                   "zh/notification-channels/introduction",
                   {
                     "group": "Telegram 电报",
-                    "collapsed": false,
                     "pages": [
                       "zh/notification-channels/telegram",
                       "zh/notification-channels/telegram-group",
@@ -101,8 +102,9 @@
               {
                 "group": "用户 & 设置",
                 "icon": "gear",
-                "pages": ["zh/settings/sign-in", 
-                  "zh/settings/user-settings", 
+                "pages": [
+                  "zh/settings/sign-in",
+                  "zh/settings/user-settings",
                   "zh/settings/mywallet",
                   "zh/settings/copy-trading",
                   "zh/settings/price-auto-entry"
@@ -111,7 +113,9 @@
               {
                 "group": "更新日志",
                 "icon": "history",
-                "pages": ["zh/changelog"]
+                "pages": [
+                  "zh/changelog"
+                ]
               }
             ]
           },
@@ -164,7 +168,10 @@
               {
                 "group": "Getting Started",
                 "icon": "rocket",
-                "pages": ["en/introduction", "en/quickstart"]
+                "pages": [
+                  "en/introduction",
+                  "en/quickstart"
+                ]
               },
               {
                 "group": "On-Chain Monitoring",
@@ -216,7 +223,6 @@
                   "en/notification-channels/introduction",
                   {
                     "group": "Telegram",
-                    "collapsed": false,
                     "pages": [
                       "en/notification-channels/telegram",
                       "en/notification-channels/telegram-group",
@@ -236,12 +242,17 @@
               {
                 "group": "User Settings",
                 "icon": "gear",
-                "pages": ["en/settings/sign-in", "en/settings/user-settings"]
+                "pages": [
+                  "en/settings/sign-in",
+                  "en/settings/user-settings"
+                ]
               },
               {
                 "group": "Changelog",
                 "icon": "history",
-                "pages": ["en/changelog"]
+                "pages": [
+                  "en/changelog"
+                ]
               }
             ]
           },
