@@ -111,6 +111,16 @@
                 ]
               },
               {
+                "group": "我的钱包",
+                "icon": "gear",
+                "pages": [
+                  "zh/my-wallet/my-wallet",
+                  "zh/my-wallet/copy-trading",
+                  "zh/my-wallet/price-auto-entry",
+                  "zh/my-wallet/multi-wallet-auto-entry"
+                ]
+              },
+              {
                 "group": "更新日志",
                 "icon": "history",
                 "pages": [
